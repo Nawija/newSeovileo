@@ -9,7 +9,8 @@ module.exports = {
     siteUrl: `https://seovileo.pl/`,
   },
   plugins: [
-    {
+    { 
+      pathPrefix: "/newSeovileo",
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
