@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-main{
+    color: white;
+}
+
+.anim-scroll-down{
+    animation: scroll-down .6s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+}
+
+@keyframes scroll-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }

@@ -4,7 +4,7 @@ import * as React from "react"
 
 const Footer = () => (
   <footer>
-        
+        div.lol
   </footer>
 )
 
