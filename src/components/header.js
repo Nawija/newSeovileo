@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
     setMenu(!showNav)
   }
   return (
-    <header className="sticky top-0 z-50 shadow-lg">
+    <header className="sticky top-0 z-50">
       <nav className=" bg-black/90">
         <div className="globalWrapper flex py-2 md:py-4 justify-between w-full px-7">
           <Link
@@ -77,7 +77,7 @@ const Header = ({ siteTitle }) => {
           <ul
             className={
               showNav
-                ? "absolute left-0 top-full shadow-xl flex items-center justify-center w-full flex-col bg-black transition-all duration-500 z-[-1] lg:static lg:flex-row lg:opacity-100 lg:w-auto lg:z-[50] ease-in-out"
+                ? "absolute left-0 top-full shadow-xl flex items-center justify-center w-full flex-col bg-black/90 transition-all duration-500 z-[-1] lg:static lg:flex-row lg:opacity-100 lg:w-auto lg:z-[50] ease-in-out"
 
                 : "absolute left-0 flex items-center justify-center w-full flex-col transition-all duration-500 z-[-1] lg:static lg:flex-row lg:opacity-100 lg:w-auto lg:z-[50] opacity-0 -translate-y-[400%] lg:translate-y-0 ease-in-out"
             }
@@ -147,7 +147,7 @@ const Header = ({ siteTitle }) => {
           <button
             onClick={HandleMenu}
             type="button"
-            className="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-4 py-4 my-auto"
+            className="inline-flex items-center lg:hidden bg-gray-300 hover:bg-gray-500 hover:text-gray-100 ring-orange-300 text-gray-500 active:text-orange-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-4 py-4 my-auto transition-colors duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

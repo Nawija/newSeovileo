@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 
 const Footer = () => (
-  <footer className="relative mt-12 p-4 bg-gradient-to-t from-black/80 via-red-500/50 to-orange-300">
+  <footer className="relative mt-12 p-4 bg-gradient-to-t from-black/80 via-orange-500/50 to-black/90">
     <img className="absolute inset-0 w-full h-full -z-10 object-cover object-center" src="https://cdn.pixabay.com/photo/2017/01/18/21/49/singapore-1990959_960_720.jpg"
     alt="miasto nocą" />
     <div className="globalWrapper px-8 py-4">
@@ -112,6 +112,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
+    
   </footer>
 )
 

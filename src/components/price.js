@@ -8,9 +8,9 @@ const Price = () => (
     >
         <div className="globalWrapper px-1 mx-auto">
             <div className="flex flex-col text-center w-full">
-                <h3 className="text-2xl lg:text-3xl font-medium title-font mb-2 text-orange-500">
+                <h1 className="text-2xl lg:text-3xl font-medium title-font mb-2 text-orange-500">
                     Nie trzeba przepłacać za swoją stronę internetową!
-                </h3>
+                </h1>
                 <p>
                     Nasze ceny są przystępne dla każdego i dopasowujemy je do
                     indywidualnych potrzeb każdego klienta. Skontaktuj się z
@@ -26,7 +26,7 @@ const Price = () => (
             </div>
             <div className="flex flex-wrap mt-6 md:mt-16">
                 <div className="py-4 px-2 lg:px-10 lg:py-6 xl:w-1/3 md:w-1/2 w-full mx-auto ">
-                    <div className="group  h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden hover:scale-105 hover:rotate-2 ease-in-out hover:border-amber-300 hover:shadow-lg transition-all duration-500">
+                    <div className="group shadow-orange-500 h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden hover:scale-105 hover:rotate-2 ease-in-out hover:border-amber-300 hover:shadow-lg transition-all duration-500">
                         <p className=" absolute top-20 rotate-12 left-3/4 group-hover:bg-red-600 duration-500 transition-colors bg-orange-500 rounded-full py-3 px-1 border-2 border-white">
                             -62%
                         </p>
@@ -583,7 +583,7 @@ const Price = () => (
             Strony, które przyciągają wzrok, skutecznie przekazują informacje i
             prowadzą do sukcesu!
         </p>
-        <p className="text-orange-200 underline underline-offset-8">*Dla każdej strony wcześniejszy darmowy projekt!</p>
+        <p className="text-orange-200">*Dla każdej strony wcześniejszy darmowy projekt!</p>
        </div>
     </section>
 );

@@ -6,7 +6,7 @@ import heroVideo from "../assets/heroVideo.mp4"
 const Hero = () => (
   <section class="mx-auto flex justify-center items-center flex-1 shrink-0 overflow-hidden shadow-2xl drop-shadow-2xl rounded-lg relative py-16 md:py-20 xl:py-56 mb-6">
     <video
-      class="w-full h-full max-w-[1600px] mx-auto lg:rounded-3xl shadow-xl shadow-orange-600 object-cover object-center absolute inset-0"
+      class="w-full h-full max-w-[1600px] mx-auto lg:rounded-3xl  object-cover object-center absolute inset-0"
       src={heroVideo}
       type="video/mp4"
       autoPlay
