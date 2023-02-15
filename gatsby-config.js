@@ -1,18 +1,12 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Tworzenie Stron Internetowych Seo www`,
+    description: `Strona Internetowa poświęcona charakterystyce tworzenia szybkich stron www z wykorzystaniem popularnego frameworka GatsbyJS.`,
+    author: `@Seovvileo`,
+    siteUrl: `https://seovileo.pl/`,
   },
   plugins: [
     {
@@ -21,10 +15,6 @@ module.exports = {
         enableListener: true,
         preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         web: [
-          {
-            name: `Righteous`,
-            file: `https://fonts.googleapis.com/css2?family=Righteous&display=swap`,
-          },
           {
             name: `Signika`,
             file: `https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500&display=swap`,
@@ -52,7 +42,7 @@ module.exports = {
         background_color: `#0C0904`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        theme_color: `#0C0904`,
+        // theme_color: `#0C0904`,
         display: `minimal-ui`,
         icon: `src/assets/logoBrowser.png`,
       },

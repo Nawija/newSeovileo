@@ -1,28 +1,14 @@
-import * as React from "react"
+import * as React from "react";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Hero from "../components/hero"
-import Price from "../components/price"
-import FasterBetter from "../components/fasterBetter"
-import InfoGatsby from "../components/infoGatsby"
-import WhyGatsby from "../components/whyGatsby"
-import Opinion from "../components/opinion"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <InfoGatsby />
-    <FasterBetter />
-    <WhyGatsby />
-    <Price />
-    <Opinion />
+    <Layout>
+       <h1 className="flex items-center justify-center h-screen w-full text-3xl">Clear Starter Gatsby</h1>
+    </Layout>
+);
 
+export const Head = () => <Seo title="Seovileo" />;
 
-
-  </Layout>
-)
-
-export const Head = () => <Seo title="Seovileo" />
-
-export default IndexPage
+export default IndexPage;
