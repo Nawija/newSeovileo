@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/newSeovileo",
   siteMetadata: {
     title: `Tworzenie Stron Internetowych Seo www`,
     description: `Strona Internetowa poświęcona charakterystyce tworzenia szybkich stron www z wykorzystaniem popularnego frameworka GatsbyJS.`,
@@ -10,7 +11,6 @@ module.exports = {
   },
   plugins: [
     { 
-      pathPrefix: "/newSeovileo",
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: Signika,sans-serif;
+}
 
 .text-main{
     color: white;
