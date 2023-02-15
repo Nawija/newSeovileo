@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[532],{8909:function(e,t,a){a.r(t),a.d(t,{Head:function(){return s}});var l=a(7294),n=a(1977),r=a(9357),u=a(6373);const s=()=>l.createElement(r.Z,{title:"Oferta"});t.default=()=>l.createElement(n.Z,null,l.createElement(u.Z,null))}}]);
-//# sourceMappingURL=component---src-pages-oferta-js-f54e68d7b8d1268feba3.js.map
