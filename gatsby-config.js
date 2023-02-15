@@ -43,7 +43,7 @@ module.exports = {
         background_color: `#0C0904`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#0C0904`,
+        theme_color: `#0C0904`,
         display: `minimal-ui`,
         icon: `src/assets/logoBrowser.png`,
       },
