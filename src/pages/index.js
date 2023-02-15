@@ -19,17 +19,31 @@ const IndexPage = () => {
                 />
 
                 <div class="bg-amber-300 max-w-[2200px] mx-auto mix-blend-multiply absolute h-full w-full -z-10"></div>
-                <h1 className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold w-full px-2 mb-9 xl:text-start xl:ml-28 xl:w-1/2 flex">
+                <h1
+                    data-sal="slide-up"
+                    data-sal-delay="400"
+                    data-sal-duration="1000"
+                    data-sal-easing="ease"
+                    className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold w-full px-2 mb-9 xl:text-start xl:ml-28 xl:w-1/2 flex"
+                >
                     Stwórz swoją wizytówkę w internecie z nami!
                 </h1>
                 <div className="flex items-center xl:ml-32">
                     <Link
+                        data-sal="flip-up"
+                        data-sal-delay="700"
+                        data-sal-duration="1000"
+                        data-sal-easing="ease"
                         className="w-full mx-3 font-semibold md:w-max px-6 py-3 bg-white border-2 border-gray-200 rounded-lg "
                         to="/"
                     >
                         Oferta
                     </Link>
                     <Link
+                        data-sal="flip-up"
+                        data-sal-delay="1000"
+                        data-sal-duration="1000"
+                        data-sal-easing="ease"
                         className="w-full mx-3 font-semibold md:w-max px-6 py-3 bg-zinc-900 text-main border-2  border-gray-200 rounded-lg "
                         to="/"
                     >
