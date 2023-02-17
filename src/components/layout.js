@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
+import Messenger from "./messenger"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
       
       <div>
 
+        <Messenger />
 
         <main>{children}</main>
 

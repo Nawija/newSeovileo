@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
+import { TypeAnimation } from "react-type-animation";
 
 import heroVideo from "../assets/heroVideo.mp4";
 
@@ -19,15 +20,26 @@ const IndexPage = () => {
                 />
 
                 <div class="bg-amber-300 max-w-[2200px] mx-auto mix-blend-multiply absolute h-full w-full -z-10"></div>
-                <h1
+                <h2
                     data-sal="slide-up"
                     data-sal-delay="400"
                     data-sal-duration="1000"
                     data-sal-easing="ease"
                     className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold w-full px-2 mb-9 xl:text-start xl:ml-44 xl:w-1/2 flex"
                 >
-                    Stwórz swoją wizytówkę w internecie z nami!
-                </h1>
+                    <TypeAnimation
+                        sequence={[
+                            "Stwórz swoją wizytówkę w internecie z nami!", // Types 'One'
+                            1000, // Waits 1s
+                            "Najszybsza technologia na rynku!", // Deletes 'One' and types 'Two'
+                            2000, // Waits 2s
+                        ]}
+                        wrapper="div"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ height: "30vh" }}
+                    />
+                </h2>
                 <div className="flex items-center xl:ml-44">
                     <Link
                         data-sal="flip-up"
@@ -62,52 +74,45 @@ const IndexPage = () => {
                     </svg>
                 </div>
             </section>
+
+
             <svg
                 className="w-full h-auto absolute -z-50"
                 width="1906"
-                height="595"
-                viewBox="0 0 1906 595"
+                height="408"
+                viewBox="0 0 1906 408"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path
-                    d="M0 410.095V30H1906V347.079C1906 347.079 1434.11 54.5061 727.283 432.601C20.4507 810.695 0 410.095 0 410.095Z"
-                    fill="url(#paint0_linear_851_53)"
+                    d="M0 279.385V15H1906V235.553C1906 235.553 1434.11 32.0459 727.283 295.039C20.4507 558.032 0 279.385 0 279.385Z"
+                    fill="url(#paint0_linear_857_691)"
                 />
                 <path
-                    d="M0 380.095V0H1906V317.079C1906 317.079 1434.11 24.5061 727.283 402.601C20.4507 780.695 0 380.095 0 380.095Z"
-                    fill="url(#paint1_linear_851_53)"
+                    d="M0 264.385V0H1906V220.553C1906 220.553 1434.11 17.0459 727.283 280.039C20.4507 543.032 0 264.385 0 264.385Z"
+                    fill="#010000"
                 />
                 <defs>
                     <linearGradient
-                        id="paint0_linear_851_53"
-                        x1="953"
-                        y1="30"
-                        x2="953"
-                        y2="595"
-                        gradientUnits="userSpaceOnUse"
-                    >
-                        <stop stop-color="white" />
-                        <stop offset="0.171862" stop-color="#069B15" />
-                        <stop offset="0.739583" stop-color="white" />
-                        <stop offset="0.833333" stop-color="#C6C6C6" />
-                        <stop offset="1" stop-color="#FF9F2F" />
-                    </linearGradient>
-                    <linearGradient
-                        id="paint1_linear_851_53"
-                        x1="953"
-                        y1="0"
-                        x2="953"
-                        y2="565"
+                        id="paint0_linear_857_691"
+                        x1="8.34877e-06"
+                        y1="234.454"
+                        x2="1896.93"
+                        y2="218.64"
                         gradientUnits="userSpaceOnUse"
                     >
                         <stop />
-                        <stop offset="1" stop-color="#061400" />
+                        <stop offset="0.4375" stop-color="#069B15" />
+                        <stop offset="1" />
                     </linearGradient>
                 </defs>
             </svg>
+
+
             <section>
-                <p className="text-xl text-white text-center">Helloł Moto</p>
+                <p className="text-lg text-orange-500 text-center">
+                    CZYM SIE WYRÓZNIAMY?
+                </p>
             </section>
             <div className="h-[200vh]"></div>
         </Layout>
