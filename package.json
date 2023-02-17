@@ -30,6 +30,8 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "add": "git add . && git commit -m'x' && git push",
+    "clone": "git clone https://github.com/Nawija/newSeovileo.git",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
