@@ -44,8 +44,8 @@ const Header = () => {
                 <nav
                     className={
                         showMenu
-                            ? "max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
-                            : "max-w-screen-2xl mx-auto px-4 py-4 md:py-6 flex items-center justify-between w-full text-black transition-colors duration-300"
+                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
+                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black transition-colors duration-300"
                     }
                 >
                     <Link
@@ -118,7 +118,7 @@ const Header = () => {
                         className={
                             showMenu
                                 ? "absolute text-lg top-full left-0 pb-4 flex flex-col text-main text-center w-full bg-black/90 opacity-100 transition duration-300 -translate-x-0 -z-10"
-                                : "absolute top-full left-0 py-8 flex flex-col md:opacity-100 md:static md:flex-row md:top-0 md:translate-x-0 md:py-0 text-main text-center w-full opacity-0 -translate-x-full transition duration-100 -z-10 md:z-10 md:ml-8"
+                                : "absolute top-full left-0 py-2 flex flex-col lg:opacity-100 lg:static lg:flex-row lg:top-0 lg:translate-x-0 lg:py-0 text-main text-center w-full opacity-0 -translate-x-full transition duration-100 -z-10 lg:z-10 lg:ml-8"
                         }
                     >
                         <Link
@@ -152,10 +152,10 @@ const Header = () => {
                             Kontakt
                         </Link>
                     </ul>
-                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden md:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">Darmowa Wycena</button>
+                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">Darmowa Wycena</button>
                     <button
                         onClick={HandleMenu}
-                        className="bg-slate-200/80 group hover:bg-slate-100/90 md:hidden p-3 transition-colors duration-300 rounded-lg"
+                        className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-300 rounded-lg"
                     >
                         <div
                             className={

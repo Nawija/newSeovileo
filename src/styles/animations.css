@@ -1,0 +1,73 @@
+/* --------Herro arrow scroll down-------- */
+.anim-scroll-down{
+  animation: scroll-down .6s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+/* -------Messenger------ */
+
+.slide-top {
+	animation: slide-top 2s ease-in-out infinite ;
+}
+
+@keyframes slide-top {
+  0% {
+    transform:  translateY(-2px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+}
+.slide-top1 {
+	animation: slide-top1 2s ease-in-out infinite ;
+}
+
+@keyframes slide-top1 {
+  33% {
+    transform: translateY(-2px);
+  }
+  39% {
+    transform: translateY(0);
+  }
+}
+.slide-top2 {
+	animation: slide-top2 2s ease-in-out infinite ;
+}
+
+@keyframes slide-top2 {
+  70% {
+    transform: translateY(-2px);
+  }
+  74% {
+    transform: translateY(0);
+  }
+}
+.msg-rotate {
+	animation: msg-rotate 5s ease-in-out 2s infinite alternate-reverse;
+}
+
+@keyframes msg-rotate {
+  3% {
+    transform: rotate(12deg) scale(1.05);
+  }
+  5% {
+    transform: rotate(0) scale(1.05);
+  }
+  7% {
+    transform: rotate(12deg) scale(1.05);
+  }
+  10% {
+    transform: rotate(0) scale(1);
+  }
+}
+
+
+/* ---------------- */
