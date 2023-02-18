@@ -5,11 +5,12 @@ import { Link } from "gatsby";
 import { TypeAnimation } from "react-type-animation";
 
 import heroVideo from "../assets/heroVideo.mp4";
+import highSpeed from "../assets/icons/high-speed.png";
 
 const IndexPage = () => {
     return (
         <Layout>
-            <section className="relative h-screen flex flex-col items-center justify-center text-base mx-auto max-w-[2500px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-8 md:py-24">
+            <section className="relative h-screen flex flex-col items-center justify-center text-base mx-auto max-w-[2500px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-2 md:py-24">
                 <video
                     className="absolute max-w-[2200px] mx-auto h-full w-full object-cover object-center -z-10"
                     src={heroVideo}
@@ -25,13 +26,13 @@ const IndexPage = () => {
                     data-sal-delay="400"
                     data-sal-duration="1000"
                     data-sal-easing="ease"
-                    className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold w-full px-2 mb-9 xl:text-start xl:ml-44 xl:w-1/2 flex"
+                    className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold w-full items-center justify-center px-2 mb-9 xl:text-start xl:ml-44 xl:w-1/2 flex"
                 >
                     <TypeAnimation
                         sequence={[
-                            "Stwórz swoją wizytówkę w internecie z nami!", // Types 'One'
-                            1000, // Waits 1s
-                            "Najszybsza technologia na rynku!", // Deletes 'One' and types 'Two'
+                            "Stwórz swoją wizytówkę w internecie z nami!",
+                            2000, // Waits 1s
+                            "Najszybsza technologia na rynku!",
                             2000, // Waits 2s
                         ]}
                         wrapper="div"
@@ -75,44 +76,37 @@ const IndexPage = () => {
                 </div>
             </section>
 
-
             <svg
-                className="w-full h-auto absolute -z-50"
+                className="h-auto w-full absolute -z-50"
                 width="1906"
-                height="408"
-                viewBox="0 0 1906 408"
+                height="706"
+                viewBox="0 0 1906 706"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path
-                    d="M0 279.385V15H1906V235.553C1906 235.553 1434.11 32.0459 727.283 295.039C20.4507 558.032 0 279.385 0 279.385Z"
-                    fill="url(#paint0_linear_857_691)"
-                />
-                <path
-                    d="M0 264.385V0H1906V220.553C1906 220.553 1434.11 17.0459 727.283 280.039C20.4507 543.032 0 264.385 0 264.385Z"
-                    fill="#010000"
+                    d="M0 0H1906V644.911C1906 644.911 1037.5 782.361 953 644.911C868.5 507.462 0 644.911 0 644.911V0Z"
+                    fill="url(#paint0_linear_865_91)"
                 />
                 <defs>
                     <linearGradient
-                        id="paint0_linear_857_691"
-                        x1="8.34877e-06"
-                        y1="234.454"
-                        x2="1896.93"
-                        y2="218.64"
+                        id="paint0_linear_865_91"
+                        x1="1589"
+                        y1="37.0001"
+                        x2="449"
+                        y2="409"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop />
-                        <stop offset="0.4375" stop-color="#069B15" />
-                        <stop offset="1" />
+                        <stop stop-color="#031500" />
+                        <stop offset="1" stop-color="#010000" />
                     </linearGradient>
                 </defs>
             </svg>
-
-
-            <section>
-                <p className="text-lg text-orange-500 text-center">
-                    CZYM SIE WYRÓZNIAMY?
-                </p>
+            <section className="relative flex flex-col items-center justify-center text-base mx-auto max-w-screen-2xl md:text-lg px-3 sm:px-8 py-2 md:py-24 text-white z-10">
+                <h3 className="text-white text-xl mt-6 md:text-3xl lg:text-4xl  md:mt-0">CZYM SIE WYRÓZNIAMY?</h3>
+                <div className="flex items-center w-full mt-6 justify-center flex-col md:flex-row flex-wrap">
+                    <div className="w-full flex items-center justify-center flex-col bg-slate-50"><img className="h-24 fill-amber-400 w-auto " src={highSpeed} /></div>
+                </div>
             </section>
             <div className="h-[200vh]"></div>
         </Layout>
