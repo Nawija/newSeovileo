@@ -26,10 +26,6 @@ const Header = () => {
 
     return (
         <header
-            data-sal="flip-left"
-            data-sal-delay="200"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
             className="
                     z-50 bg-black mx-auto sticky top-0 text-base md:text-lg text-center
             "
@@ -152,7 +148,9 @@ const Header = () => {
                             Kontakt
                         </Link>
                     </ul>
-                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">Darmowa Wycena</button>
+                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">
+                        Darmowa Wycena
+                    </button>
                     <button
                         onClick={HandleMenu}
                         className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-300 rounded-lg"
