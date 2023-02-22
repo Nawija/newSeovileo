@@ -8,8 +8,26 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
+}
+/* ------------upperline txt----------- */
+
+.lineAfter::before{
+  animation: lineAfter 10s ease-in-out infinite ;
+}
+
+@keyframes lineAfter {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 100%;
+  }
+  75%{
+    width: 0%;
+  }
+
 }
 
 /* -------Messenger------ */

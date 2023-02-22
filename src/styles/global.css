@@ -9,3 +9,14 @@ body{
 .text-main{
     color: white;
 }
+
+.lineAfter::before{
+    content: ' ';
+    background-color: orange;
+    height: 4px;
+    width: 0%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: block;
+    
+}
