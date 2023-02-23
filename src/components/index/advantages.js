@@ -7,10 +7,10 @@ import seo from "../../assets/seo.svg";
 const Responsive = () => (
     <section className="relative w-full flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 md:pt-24 text-center">
         <div className="sm:px-8 py-2 md:py-12">
-            <h3 className="lineAfter w-max mx-auto uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
+            <h3 className=" w-max mx-auto uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
                 co nas wyróżnia?
             </h3>
-            <h4 className="capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-500">
+            <h4 className="lineAfter capitalize text-basd sm:text-lg md:text-xl lg:text-2xl text-zinc-500">
                 Wysoka wydajność dzięki technologii generacji statycznej i
                 innych optymalizacjom
             </h4>
@@ -18,7 +18,7 @@ const Responsive = () => (
 
         <div className="sm:px-8 py-2 flex flex-col md:flex-row flex-wrap items-center md:items-stretch justify-center text-center">
             <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
-                <div className="bg-white p-2 rounded-full h-24 w-24 shadow-lg">
+                <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
                         src={gatsbySpeed}
@@ -32,7 +32,7 @@ const Responsive = () => (
                 </p>
             </div>
             <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
-                <div className="bg-white p-2 rounded-full h-24 w-24 shadow-lg">
+                <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
                         src={betterCoding}
@@ -46,7 +46,7 @@ const Responsive = () => (
                 </p>
             </div>
             <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
-                <div className="bg-white p-2 rounded-full h-24 w-24 shadow-lg">
+                <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
                         src={efficiency}
@@ -60,7 +60,7 @@ const Responsive = () => (
                 </p>
             </div>
             <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
-                <div className="bg-white p-2 rounded-full h-24 w-24 shadow-lg">
+                <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
                         src={seo}

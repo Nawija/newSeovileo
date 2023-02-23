@@ -14,18 +14,21 @@
 /* ------------upperline txt----------- */
 
 .lineAfter::before{
-  animation: lineAfter 10s ease-in-out infinite ;
+  animation: lineAfter 7s ease-in-out infinite ;
 }
 
 @keyframes lineAfter {
   0% {
     width: 0%;
   }
-  25% {
-    width: 100%;
+  22% {
+    width: 40%;
   }
-  75%{
-    width: 0%;
+  66% {
+    width: 40%;
+  }
+  77%{
+    opacity: 0%;
   }
 
 }
