@@ -10,11 +10,19 @@ body{
     color: white;
 }
 
+.cards{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
 .lineAfter::before{
     content: ' ';
     background-color: orange;
     height: 4px;
     width: 0%;
+    margin: 0 auto;
     margin-bottom: 10px;
     display: block;
     

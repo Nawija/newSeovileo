@@ -5,19 +5,20 @@ import efficiency from "../../assets/efficiency.svg";
 import seo from "../../assets/seo.svg";
 
 const Responsive = () => (
-    <section className="relative w-full flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 md:pt-24 text-center">
+    <section className="relative w-full flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 md:pt-24 text-center text-white">
         <div className="sm:px-8 py-2 md:py-12">
             <h3 className=" w-max mx-auto uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
                 co nas wyróżnia?
             </h3>
-            <h4 className="lineAfter capitalize text-basd sm:text-lg md:text-xl lg:text-2xl text-zinc-500">
+            <h4 className="lineAfter capitalize text-base sm:text-lg md:text-xl lg:text-2xl">
                 Wysoka wydajność dzięki technologii generacji statycznej i
                 innych optymalizacjom
             </h4>
         </div>
 
         <div className="sm:px-8 py-2 flex flex-col md:flex-row flex-wrap items-center md:items-stretch justify-center text-center">
-            <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
+            <div className="relative shadow-zinc-300/20 shadow-xl flex items-center justify-center flex-col overflow-hidden p-2 sm:p-4 md:p-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 z-0">
+                <div className="cards bg-black/30 xl:bg-black/20  -z-10"></div>
                 <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
@@ -31,7 +32,8 @@ const Responsive = () => (
                     Większa predkość ładowania strony w porownaniu z konkurencją
                 </p>
             </div>
-            <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
+            <div className="relative shadow-zinc-300/20 shadow-xl flex items-center justify-center flex-col overflow-hidden p-2 sm:p-4 md:p-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 z-0">
+                <div className="cards bg-black/30 xl:bg-black/20 -z-10"></div>
                 <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
@@ -45,7 +47,8 @@ const Responsive = () => (
                     Lepsza optymalizacja kodu strony internetowej vs konkurencja
                 </p>
             </div>
-            <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
+            <div className="relative shadow-zinc-300/20 shadow-xl flex items-center justify-center flex-col overflow-hidden p-2 sm:p-4 md:p-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 z-0">
+                <div className="cards bg-black/30 xl:bg-black/20 -z-10"></div>
                 <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
                     <img
                         className="h-full w-full "
@@ -59,13 +62,10 @@ const Responsive = () => (
                     Większa wydajność strony w porownaniu z konkurencją
                 </p>
             </div>
-            <div className=" cards p-2 sm:p-4 md:px-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 shadow-lg">
+            <div className="relative shadow-zinc-300/20 shadow-xl flex items-center justify-center flex-col overflow-hidden p-2 sm:p-4 md:p-6 rounded-xl mx-4 w-11/12 md:w-1/3 xl:w-1/5 mt-6 z-0">
+                <div className="cards bg-black/30 xl:bg-black/20  -z-10"></div>
                 <div className="bg-white p-2 rounded-full h-24 w-24 mx-auto shadow-lg">
-                    <img
-                        className="h-full w-full "
-                        src={seo}
-                        alt="Rakieta"
-                    />
+                    <img className="h-full w-full " src={seo} alt="Rakieta" />
                 </div>
                 <p className="text-8xl font-medium text-green-600">2x</p>
                 <div className=" w-1/3 border-b border-green-500 m-4 mx-auto"></div>
