@@ -9,3 +9,22 @@ body{
 .text-main{
     color: white;
 }
+
+.cards{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.lineAfter::before{
+    margin-top: -10px;
+    content: ' ';
+    background-color: orange;
+    height: 2px;
+    width: 0%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    
+}

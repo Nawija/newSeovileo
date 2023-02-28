@@ -11,6 +11,14 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: /\.inline\.svg$/, // See below to configure properly
+                },
+            },
+        },
+        {
             resolve: `gatsby-omni-font-loader`,
             options: {
                 enableListener: true,

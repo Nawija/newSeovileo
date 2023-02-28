@@ -10,7 +10,7 @@ const Messenger = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setMsg(true);
-        }, 10000);
+        }, 12000);
         return () => timer;
     });
 

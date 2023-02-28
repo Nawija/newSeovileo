@@ -1,73 +1,164 @@
 /* --------Herro arrow scroll down-------- */
-.anim-scroll-down{
-  animation: scroll-down .6s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+.anim-scroll-down {
+    animation: scroll-down 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) infinite
+        alternate-reverse both;
 }
 
 @keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+/* ------------upperline txt----------- */
+
+.lineAfter::before {
+    animation: lineAfter 7s ease-in-out infinite;
+}
+
+@keyframes lineAfter {
+    0% {
+        width: 0%;
+    }
+    22% {
+        width: 40%;
+    }
+    66% {
+        width: 40%;
+    }
+    77% {
+        opacity: 0%;
+    }
+}
+/* --------- card Digit Change Color ----------- */
+.cardDigitChangeColor{
+  animation: cardDigitChangeColor 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes cardDigitChangeColor{
   0% {
-    transform: translateY(0);
+      color:orange;
+      letter-spacing: 0.2rem;
   }
+  25%{
+letter-spacing: .3rem;
+}
+  50%{
+letter-spacing: .2rem;
+}
+  75%{
+letter-spacing: .3rem;
+}
   100% {
-    transform: translateY(-50px);
+      letter-spacing: .2rem;
   }
+}
+/* --------- border Under Card Digit ----------- */
+.borderUnderCardDigit{
+  animation: borderUnderCardDigit 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes borderUnderCardDigit{
+  0% {
+      
+      letter-spacing: 0.2rem;
+  }
+  25%{
+letter-spacing: .3rem;
+}
+  50%{
+letter-spacing: .2rem;
+}
+  75%{
+letter-spacing: .3rem;
+}
+  100% {
+      letter-spacing: .2rem;
+      border-color:orange;
+  }
+}
+
+/* ---------Text under hero technolgoia gatsby ----------- */
+.techGatsbyAnim {
+    animation: techGatsbyAnim 4s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes techGatsbyAnim {
+    0% {
+        color:orange;
+        letter-spacing: 0.1rem;
+    }
+    25%{
+  letter-spacing: .2rem;
+}
+    50%{
+  letter-spacing: .2rem;
+}
+    75%{
+  letter-spacing: .2rem;
+}
+    100% {
+        letter-spacing: .1rem;
+    }
 }
 
 /* -------Messenger------ */
 
 .slide-top {
-	animation: slide-top 2s ease-in-out infinite ;
+    animation: slide-top 2s ease-in-out infinite;
 }
 
 @keyframes slide-top {
-  0% {
-    transform:  translateY(-2px);
-  }
-  20% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-2px);
+    }
+    20% {
+        transform: translateY(0);
+    }
 }
 .slide-top1 {
-	animation: slide-top1 2s ease-in-out infinite ;
+    animation: slide-top1 2s ease-in-out infinite;
 }
 
 @keyframes slide-top1 {
-  33% {
-    transform: translateY(-2px);
-  }
-  39% {
-    transform: translateY(0);
-  }
+    33% {
+        transform: translateY(-2px);
+    }
+    39% {
+        transform: translateY(0);
+    }
 }
 .slide-top2 {
-	animation: slide-top2 2s ease-in-out infinite ;
+    animation: slide-top2 2s ease-in-out infinite;
 }
 
 @keyframes slide-top2 {
-  70% {
-    transform: translateY(-2px);
-  }
-  74% {
-    transform: translateY(0);
-  }
+    70% {
+        transform: translateY(-2px);
+    }
+    74% {
+        transform: translateY(0);
+    }
 }
 .msg-rotate {
-	animation: msg-rotate 5s ease-in-out 2s infinite alternate-reverse;
+    animation: msg-rotate 5s ease-in-out 2s infinite alternate-reverse;
 }
 
 @keyframes msg-rotate {
-  3% {
-    transform: rotate(12deg) scale(1.05);
-  }
-  5% {
-    transform: rotate(0) scale(1.05);
-  }
-  7% {
-    transform: rotate(12deg) scale(1.05);
-  }
-  10% {
-    transform: rotate(0) scale(1);
-  }
+    3% {
+        transform: rotate(12deg) scale(1.05);
+    }
+    5% {
+        transform: rotate(0) scale(1.05);
+    }
+    7% {
+        transform: rotate(12deg) scale(1.05);
+    }
+    10% {
+        transform: rotate(0) scale(1);
+    }
 }
-
 
 /* ---------------- */
