@@ -8,6 +8,8 @@ import Hero from "../components/index/hero";
 import Responsive from "../components/index/responsive";
 import Advantages from "../components/index/advantages";
 import SpeedTest from "../components/index/speedTest";
+import WhyGatsby from "../components/index/whyGatsby"
+import ContactSection from "../components/index/contactSection"
 
 
 // Images exports
@@ -20,13 +22,15 @@ const IndexPage = () => {
     return (
         <Layout>
             <Hero />
-            <div className="relative bg-white overflow-hidden w-full">
+            <div className="relative bg-white overflow-hidden w-full z-10">
                 <img
                     className="absolute left-1/2 -translate-x-1/2 max-w-[2200px] h-auto w-[310vw] md:w-[360vw] lg:w-[110vw] max-h-[63rem] min-h-[90rem] sm:min-h-[60rem] md:min-h-[90rem] lg:min-h-[60rem]"
                     src={cardsSectionBg} alt="tło"
                 />
                 <Advantages />
                 <SpeedTest />
+                <WhyGatsby />
+                <ContactSection />
                 <Responsive />
             </div>
         </Layout>

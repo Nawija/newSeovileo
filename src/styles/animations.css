@@ -81,11 +81,11 @@ letter-spacing: .3rem;
 }
 
 /* ---------Text under hero technolgoia gatsby ----------- */
-.techGatsbyAnim {
-    animation: techGatsbyAnim 4s ease-in-out infinite alternate-reverse;
+.whyGatsby {
+    animation: whyGatsby 4s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes techGatsbyAnim {
+@keyframes whyGatsby {
     0% {
         color:orange;
         letter-spacing: 0.1rem;
