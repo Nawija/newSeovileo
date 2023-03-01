@@ -10,7 +10,7 @@ const Responsive = () => (
             <h3 className=" w-max mx-auto uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
                 co nas wyróżnia?
             </h3>
-            <h4 className="lineAfter capitalize text-base md:text-lg lg:text-xl">
+            <h4 className="lineAfter capitalize text-base lg:text-lg">
                 Wysoka wydajność dzięki technologii generacji statycznej i
                 innych optymalizacjom
             </h4>

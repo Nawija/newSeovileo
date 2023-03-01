@@ -1,7 +1,6 @@
 import * as React from "react";
 import speedTest from "../../assets/speedTest.png";
 import ArrowsSVG from "../../components/svg/arrows";
-// import BlobSVG from "../../components/svg/blob";
 
 const SpeedTest = () => (
     <section className="relative w-full flex flex-col lg:flex-row max-w-screen-2xl items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 lg:pt-24">
