@@ -40,8 +40,8 @@ const Header = () => {
                 <nav
                     className={
                         showMenu
-                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
-                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black transition-colors duration-300"
+                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
+                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-300"
                     }
                 >
                     <Link

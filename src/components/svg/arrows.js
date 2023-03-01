@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Arrows = () => (
     <svg
-    className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] h-auto w-32"
+    className="absolute top-0 left-0 -translate-x-[40%] sm:-translate-x-[30%] lg:-translate-x-[40%] xl:-translate-x-[34%] -translate-y-[40%] sm:-translate-y-[30%] lg:-translate-y-[40%] xl:-translate-y-[34%] h-auto w-32 sm:w-56 md:w-80 xl:w-96"
         viewBox="0 0 436 413"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
