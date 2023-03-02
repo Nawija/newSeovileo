@@ -4,9 +4,11 @@ import { TypeAnimation } from "react-type-animation";
 import heroVideo from "../../assets/heroVideo.mp4";
 
 const Hero = () => (
-    <section className="relative w-full h-screen max-h-[90rem] flex flex-col items-center justify-center text-base mx-auto max-w-[2200px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-2 md:py-24 -z-10">
+
+    <section className="relative w-full h-screen max-h-[90rem] flex flex-col items-center justify-center text-base mx-auto max-w-[2200px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-2 md:py-24 z-0">
         <video
-            className="fixed top-0 left-0 max-w-[2200px] mx-auto h-full w-full shadow-2xl object-cover object-center -z-10"
+            className="lg:fixed absolute top-0 max-w-[2200px] mx-auto h-full w-full shadow-2xl object-cover object-center -z-50"
+
             src={heroVideo}
             type="video/mp4"
             autoPlay
@@ -14,7 +16,9 @@ const Hero = () => (
             muted
         />
 
-        <div class="fixed top-0 left-0 bg-amber-300 max-w-[2200px] mx-auto mix-blend-multiply h-full w-full -z-10"></div>
+
+        <div class="lg:fixed absolute top-0 bg-amber-300 max-w-[2200px] mx-auto mix-blend-multiply h-full w-full -z-50"></div>
+
             
         <div className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold overflow-hidden w-full md:w-3/4 items-center justify-center px-2 mb-9 xl:text-start xl:ml-44 xl:w-1/2 flex">
             <TypeAnimation
@@ -30,7 +34,9 @@ const Hero = () => (
                 repeat={Infinity}
             />
         </div>
-        <div className="flex items-center xl:ml-44">
+
+        <div className="flex items-center xl:ml-44 z-30">
+
             <Link
                 data-sal="flip-up"
                 data-sal-delay="700"

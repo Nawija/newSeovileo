@@ -18,9 +18,10 @@ body{
 }
 
 .lineAfter::before{
+    margin-top: -10px;
     content: ' ';
     background-color: orange;
-    height: 4px;
+    height: 2px;
     width: 0%;
     margin: 0 auto;
     margin-bottom: 10px;
