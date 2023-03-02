@@ -60,6 +60,7 @@
     animation: borderUnderCardDigit 2s ease-in-out infinite alternate-reverse;
 }
 
+
 @keyframes borderUnderCardDigit {
     0% {
         letter-spacing: 0.2rem;
@@ -77,6 +78,27 @@
         letter-spacing: 0.2rem;
         border-color: orange;
     }
+}
+/* ------------upperline txt----------- */
+
+.lineAfter::before{
+  animation: lineAfter 7s ease-in-out infinite ;
+}
+
+@keyframes lineAfter {
+  0% {
+    width: 0%;
+  }
+  22% {
+    width: 40%;
+  }
+  66% {
+    width: 40%;
+  }
+  77%{
+    opacity: 0%;
+  }
+
 }
 
 /* ---------Text under hero technolgoia gatsby ----------- */
