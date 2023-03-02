@@ -10,6 +10,8 @@ import Advantages from "../components/index/advantages";
 import SpeedTest from "../components/index/speedTest";
 import WhyGatsby from "../components/index/whyGatsby"
 import ContactSection from "../components/index/contactSection"
+import GwarantionSection from "../components/index/gwarantionSection"
+import PriceSection from "../components/index/priceSection"
 
 
 // Images exports
@@ -31,6 +33,8 @@ const IndexPage = () => {
                 <SpeedTest />
                 <WhyGatsby />
                 <ContactSection />
+                <GwarantionSection />
+                <PriceSection />
                 <Responsive />
             </div>
         </Layout>
