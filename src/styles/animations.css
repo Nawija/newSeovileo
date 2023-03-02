@@ -33,52 +33,51 @@
     }
 }
 /* --------- card Digit Change Color ----------- */
-.cardDigitChangeColor{
-  animation: cardDigitChangeColor 2s ease-in-out infinite alternate-reverse;
+.cardDigitChangeColor {
+    animation: cardDigitChangeColor 2s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes cardDigitChangeColor{
-  0% {
-      color:orange;
-      letter-spacing: 0.2rem;
-  }
-  25%{
-letter-spacing: .3rem;
-}
-  50%{
-letter-spacing: .2rem;
-}
-  75%{
-letter-spacing: .3rem;
-}
-  100% {
-      letter-spacing: .2rem;
-  }
+@keyframes cardDigitChangeColor {
+    0% {
+        color: orange;
+        letter-spacing: 0.2rem;
+    }
+    25% {
+        letter-spacing: 0.3rem;
+    }
+    50% {
+        letter-spacing: 0.2rem;
+    }
+    75% {
+        letter-spacing: 0.3rem;
+    }
+    100% {
+        letter-spacing: 0.2rem;
+    }
 }
 /* --------- border Under Card Digit ----------- */
-.borderUnderCardDigit{
-  animation: borderUnderCardDigit 2s ease-in-out infinite alternate-reverse;
+.borderUnderCardDigit {
+    animation: borderUnderCardDigit 2s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes borderUnderCardDigit{
-  0% {
-      
-      letter-spacing: 0.2rem;
-  }
-  25%{
-letter-spacing: .3rem;
-}
-  50%{
-letter-spacing: .2rem;
-}
-  75%{
-letter-spacing: .3rem;
-}
-  100% {
 
-      letter-spacing: .2rem;
-      border-color:orange;
-  }
+@keyframes borderUnderCardDigit {
+    0% {
+        letter-spacing: 0.2rem;
+    }
+    25% {
+        letter-spacing: 0.3rem;
+    }
+    50% {
+        letter-spacing: 0.2rem;
+    }
+    75% {
+        letter-spacing: 0.3rem;
+    }
+    100% {
+        letter-spacing: 0.2rem;
+        border-color: orange;
+    }
 }
 /* ------------upperline txt----------- */
 
@@ -103,26 +102,38 @@ letter-spacing: .3rem;
 }
 
 /* ---------Text under hero technolgoia gatsby ----------- */
-.whyGatsby {
-    animation: whyGatsby 4s ease-in-out infinite alternate-reverse;
+.changeColor {
+    animation: changeColor 4s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes whyGatsby {
+@keyframes changeColor {
     0% {
-        color:orange;
+        color: orange;
+    }
+    100% {
+        color: #22c55e;
+    }
+}
+/* ---------Text under hero technolgoia gatsby ----------- */
+.textStreach {
+    animation: textStreach 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes textStreach {
+    0% {
         letter-spacing: 0.1rem;
     }
-    25%{
-  letter-spacing: .2rem;
-}
-    50%{
-  letter-spacing: .2rem;
-}
-    75%{
-  letter-spacing: .2rem;
-}
+    25% {
+        letter-spacing: 0.17rem;
+    }
+    50% {
+        letter-spacing: 0.17rem;
+    }
+    75% {
+        letter-spacing: 0.17rem;
+    }
     100% {
-        letter-spacing: .1rem;
+        letter-spacing: 0.1rem;
     }
 }
 
