@@ -1,5 +1,6 @@
 import * as React from "react";
 import speedTest from "../../assets/speedTest.png";
+
 import ArrowsSVG from "../../components/svg/arrows";
 
 const SpeedTest = () => (
@@ -8,6 +9,7 @@ const SpeedTest = () => (
             <h5 className=" text-sm sm:text-base lg:text-lg tracking-widest text-green-500 drop-shadow-lg">TECHNOLOGIA GATSBY</h5>
             <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase font-semibold mb-2">Uzyskaj Najszybszą Stronę Internetową!</h1>
             <p className="text-base md:text-lg">
+
                 Nasze strony internetowe tworzymy w technologii Gatsby, aby
                 zapewnić naszym klientom najlepsze doświadczenie użytkownika.
                 Dzięki szybkości i wydajności, nasze strony są łatwo dostępne
@@ -21,9 +23,11 @@ const SpeedTest = () => (
                 zawsze najlepszej jakości.
             </p>
         </div>
+
         <div className="relative w-full lg:w-[80%] px-2 md:px-12 sm:px-8 py-2 md:py-12">
             <img className=" w-full h-full z-30" src={speedTest} alt="test wydajności i szybkości" />
             <ArrowsSVG />
+
         </div>
     </section>
 );
