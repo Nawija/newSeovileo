@@ -11,8 +11,7 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
-        console.log(window.scrollY);
-        if (window.scrollY >= 120) {
+        if (window.scrollY >= 300) {
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -40,8 +39,8 @@ const Header = () => {
                 <nav
                     className={
                         showMenu
-                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
-                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-6 flex items-center justify-between w-full text-black transition-colors duration-300"
+                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
+                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-300"
                     }
                 >
                     <Link
@@ -124,10 +123,37 @@ const Header = () => {
                             Home
                         </Link>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
                             to="/"
+                            className="group relative px-4 py-5 hover:text-orange-400 transition-all duration-300"
                         >
-                            Oferta
+                            <p>Oferta&#9662;</p>
+                            <div className=" group-hover:opacity-100 opacity-0 flex -translate-y-full group-hover:translate-y-0 -z-30 group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 h-80 w-72 bg-white/60 shadow-lg rounded-xl overflow-hidden hover:text-zinc-600 transition-all duration-150 group-hover:text-zinc-600">
+                                <div className=" absolute h-full w-full backdrop-blur-md top-0 bg-white/40 -z-10"></div>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-300 w-max"
+                                    to="/"
+                                >
+                                    Strona Internetowa www
+                                </Link>{" "}
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    to="/"
+                                >
+                                    Projekt Graficzny
+                                </Link>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    to="/"
+                                >
+                                    Projekt Logo
+                                </Link>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    to="/"
+                                >
+                                    Audyt SEO
+                                </Link>
+                            </div>
                         </Link>
                         <Link
                             className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"

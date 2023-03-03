@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import ScrollUpIcon from "./scrollUpIcon"
 import Footer from "./footer"
 import Messenger from "./messenger"
 
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      
+      <ScrollUpIcon />
       <div>
 
         <Messenger />

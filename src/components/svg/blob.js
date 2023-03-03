@@ -2,6 +2,7 @@ import * as React from "react";
 
 const Blob = () => (
     <svg
+    className="absolute top-0 right-0 translate-x-[40%] sm:translate-x-[30%] lg:translate-x-[40%] xl:translate-x-[34%] translate-y-[40%] sm:translate-y-[30%] lg:translate-y-[40%] xl:translate-y-[34%] h-auto w-32 sm:w-56 md:w-80 xl:w-96 z-10"
         width="471"
         height="473"
         viewBox="0 0 471 473"
