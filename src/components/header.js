@@ -8,6 +8,11 @@ const Header = () => {
         setMenu(!showMenu);
     };
 
+    const [dropMenu, setDrop] = useState(false);
+    const HandleDropMenu = () => {
+        setDrop(!dropMenu);
+    };
+
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
@@ -40,7 +45,7 @@ const Header = () => {
                     className={
                         showMenu
                             ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
-                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-300"
+                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-200"
                     }
                 >
                     <Link
@@ -112,94 +117,93 @@ const Header = () => {
                     <ul
                         className={
                             showMenu
-                                ? "absolute text-lg top-full left-0 pb-4 flex flex-col text-main text-center w-full bg-black/90 opacity-100 transition duration-300 -translate-x-0 -z-10"
+                                ? "absolute text-lg top-full left-0 pb-4 flex flex-col text-main text-center w-full bg-black/90 opacity-100 transition duration-200 -translate-x-0 -z-10"
                                 : "absolute top-full left-0 py-2 flex flex-col lg:opacity-100 lg:static lg:flex-row lg:top-0 lg:translate-x-0 lg:py-0 text-main text-center w-full opacity-0 -translate-x-full transition duration-100 -z-10 lg:z-10 lg:ml-8"
                         }
                     >
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
                             to="/"
                         >
                             Home
                         </Link>
-                        <Link
-                            to="/"
-                            className="group relative px-4 py-5 hover:text-orange-400 transition-all duration-300"
+                        <button
+                            onClick={HandleDropMenu}
+                            className="group relative px-1 py-1 mx-3 my-4"
                         >
-                            <p>Oferta&#9662;</p>
-                            <div className=" group-hover:opacity-100 opacity-0 flex -translate-y-full group-hover:translate-y-0 -z-30 group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 h-80 w-72 bg-white/60 shadow-lg rounded-xl overflow-hidden hover:text-zinc-600 transition-all duration-150 group-hover:text-zinc-600">
-                                <div className=" absolute h-full w-full backdrop-blur-md top-0 bg-white/40 -z-10"></div>
+                            <p className="hover:text-orange-400 transition-colors duration-200">Oferta&#9662;</p>
+                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-xl overflow-hidden group-hover:text-white" : "hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-xl overflow-hidden group-hover:text-white"}>
                                 <Link
-                                    className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-300 w-max"
+                                    className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-200 w-max"
                                     to="/"
                                 >
-                                    Strona Internetowa www
+                                    Strona Internetowa
                                 </Link>{" "}
                                 <Link
-                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
                                     to="/"
                                 >
                                     Projekt Graficzny
                                 </Link>
                                 <Link
-                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
                                     to="/"
                                 >
                                     Projekt Logo
                                 </Link>
                                 <Link
-                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-300"
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
                                     to="/"
                                 >
                                     Audyt SEO
                                 </Link>
                             </div>
-                        </Link>
+                        </button>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
                             to="/"
                         >
                             Poradnik
                         </Link>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
                             to="/"
                         >
                             Portfolio
                         </Link>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
-                            to="/"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
+                            to="/kontakt"
                         >
                             Kontakt
                         </Link>
                     </ul>
-                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">
+                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-200 rounded-lg">
                         Darmowa Wycena
                     </button>
                     <button
                         onClick={HandleMenu}
-                        className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-300 rounded-lg"
+                        className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-200 rounded-lg"
                     >
                         <div
                             className={
                                 !showMenu
-                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 translate-y-2 rotate-45 rounded-lg"
+                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 translate-y-2 rotate-45 rounded-lg"
                             }
                         />
                         <div
                             className={
                                 !showMenu
-                                    ? "w-3 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-3 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 opacity-0"
+                                    ? "w-3 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-3 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 opacity-0"
                             }
                         />
                         <div
                             className={
                                 !showMenu
-                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 -translate-y-2 -rotate-45 rounded-lg"
+                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 -translate-y-2 -rotate-45 rounded-lg"
                             }
                         />
                     </button>

@@ -8,6 +8,7 @@ html{
 }
 body{
     font-family: Signika,sans-serif;
+    background-color: rgb(24, 24, 27);
 }
 
 .text-main{
@@ -31,4 +32,8 @@ body{
     margin-bottom: 10px;
     display: block;
     
+}
+
+.transition-height{
+    transition: height 3s;
 }

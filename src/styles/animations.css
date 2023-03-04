@@ -115,6 +115,25 @@
     }
 }
 /* ---------Text under hero technolgoia gatsby ----------- */
+.changeShadow {
+    animation: changeShadow 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes changeShadow {
+    0% {
+        box-shadow: 2px 22px 33px #22c55e;
+    }
+    25% {
+        box-shadow: 22px 2px 33px orange;
+    }
+    50% {
+        box-shadow: 2px -22px 33px #22c55e;
+    }
+    100% {
+        box-shadow: -21px 12px 33px orange;
+    }
+}
+/* ---------Text under hero technolgoia gatsby ----------- */
 .textStreach {
     animation: textStreach 5s ease-in-out infinite alternate-reverse;
 }

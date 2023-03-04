@@ -10,7 +10,7 @@ const Messenger = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setMsg(true);
-        }, 12000);
+        }, 6000);
         return () => timer;
     });
 
@@ -18,13 +18,13 @@ const Messenger = () => {
         <Link
             className={
                 !msg
-                    ? "fixed right-4 bottom-6 transition-transform duration-1000 z-50 translate-x-[200%]"
-                    : "fixed right-6 hover:scale-110 bottom-8 translate-x-0 transition-transform duration-500 z-50"
+                    ? "fixed right-4 bottom-8 transition-transform duration-1000 z-50 translate-x-[200%]"
+                    : "fixed right-4 hover:scale-110 bottom-8 translate-x-0 transition-transform duration-500 z-50"
             }
             to="https://www.facebook.com/profile.php?id=100090402000669"
         >
             <svg
-                className="h-12 w-12 md:h-14 md:w-14 msg-rotate "
+                className="h-11 w-11 md:h-12 md:w-12 msg-rotate "
                 viewBox="0 0 100 100"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +49,10 @@ const Messenger = () => {
                     </linearGradient>
                 </defs>
             </svg>
-            <div className="w-5/6 md:w-3/4 md:left-6 flex items-center justify-around h-4 rounded-md left-5 bg-white absolute bottom-9 md:bottom-[2.8rem] md:px-p-[0.33rem] px-1">
-                <div className="h-2 w-2 rounded-full bg-gray-600 slide-top"></div>
-                <div className="h-2 w-2 rounded-full bg-gray-600 slide-top1"></div>
-                <div className="h-2 w-2 rounded-full bg-gray-600 slide-top2"></div>
+            <div className="w-5/6 md:w-3/4 md:left-6 flex items-center justify-around h-4 rounded-md left-5 bg-white absolute bottom-9 md:bottom-[2.2rem] px-[.15rem] border">
+                <div className="h-2 w-2 rounded-full bg-gray-600 shadow-lg slide-top"></div>
+                <div className="h-2 w-2 rounded-full bg-gray-600 shadow-lg slide-top1"></div>
+                <div className="h-2 w-2 rounded-full bg-gray-600 shadow-lg slide-top2"></div>
             </div>
         </Link>
     );
