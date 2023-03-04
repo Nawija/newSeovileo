@@ -33,7 +33,3 @@ body{
     display: block;
     
 }
-
-.transition-height{
-    transition: height 3s;
-}

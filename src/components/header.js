@@ -132,7 +132,7 @@ const Header = () => {
                             className="group relative px-1 py-1 mx-3 my-4"
                         >
                             <p className="hover:text-orange-400 transition-colors duration-200">Oferta&#9662;</p>
-                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-xl overflow-hidden group-hover:text-white" : "hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-xl overflow-hidden group-hover:text-white"}>
+                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white" : "hidden group-hover:hidden lg:group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white"}>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-200 w-max"
                                     to="/"
