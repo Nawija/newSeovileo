@@ -5,21 +5,34 @@ import Seo from "../components/seo";
 import { useState } from "react";
 
 import HeroChild from "../components/heroChild";
-import test from "../assets/test.png"
+import test from "../assets/test.png";
+
+// svg live iconst desktop tablet and phone
+import Desktop from "../assets/liveSvg/desktop.svg";
+import Tablet from "../assets/liveSvg/tablet.svg";
+import Phone from "../assets/liveSvg/phone.svg";
+
 const Portfolio = () => {
     const [showLive, setLive] = useState(false);
     const HandleShowLive = () => {
         setLive(!showLive);
     };
-    const [showLiveTablet, setLiveTablet] = useState(false);
-    const HandleShowLiveTablet = () => {
-        setLiveTablet(!showLiveTablet);
+    let [changeWidthLive, setChangeWidthLive] = useState("h-full w-full");
+
+    const LiveDesktop = () => {
+        setChangeWidthLive("h-full w-full");
+    };
+    const LiveTablet = () => {
+        setChangeWidthLive("h-full max-h-[1024px] w-full max-w-[770px]");
+    };
+    const LivePhone = () => {
+        setChangeWidthLive("h-full max-h-[736px] w-full max-w-[414px]");
     };
 
     return (
         <Layout>
             <HeroChild />
-            <div className=" bg-zinc-900 overflow-hidden w-full z-10">
+            <div className=" bg-zinc-900 w overflow-hidden w-full z-10">
                 <section class="text-gray-600 body-font">
                     <div class="px-5 pt-12 mx-auto">
                         <div class="flex flex-wrap -m-4">
@@ -29,62 +42,69 @@ const Portfolio = () => {
                                         <img
                                             alt="ecommerce"
                                             className="object-cover object-center w-full h-full block"
-                                            src={test} alt="test"
+                                            src={test}
                                         />
                                     ) : (
-                                        <div className="absolute flex items-center justify-center flex-col bg-black top-0 z-[100] left-0 w-screen h-screen">
-                                            <div className="bg-black">
+                                        <div className="absolute flex items-center justify-start flex-col bg-black top-0 z-[100] left-0 w-screen h-screen">
+                                            <div className="relative top-0 flex py-1 items-center justify-start lg:justify-center w-full bg-black">
                                                 <button
                                                     onClick={HandleShowLive}
-                                                    className="border border-white py-2 px-4 mx-auto bg-white/10 rounded-lg text-white hover:bg-black/20 hover:scale-95 z-50"
+                                                    className="absolute top-1/2 right-2 -translate-y-1/2 border border-white py-2 px-4 mx-auto bg-white/10 transition-transform duration-200 rounded-lg text-white hover:bg-black/20 hover:scale-95 z-50"
                                                 >
                                                     Zamknij
                                                 </button>
+                                                <p className="relative left-0 text-start text-white text-xs p-2 w-3/4 lg:hidden">
+                                                    Zobacz jak strona wyglada na
+                                                    innych uzadzeniach zaloguj
+                                                    sie na PC
+                                                </p>
                                                 <button
-                                                    className="text-white p-4"
-                                                    onClick={
-                                                        HandleShowLiveTablet
-                                                    }
+                                                    onClick={LiveDesktop}
+                                                    className="p-4 hidden lg:flex"
                                                 >
-                                                    Tablet
+                                                    <img
+                                                        className="h-6 w-auto"
+                                                        src={Desktop}
+                                                        alt="PC"
+                                                    />
+                                                </button>
+                                                <button
+                                                    onClick={LiveTablet}
+                                                    className="p-4 hidden lg:flex"
+                                                >
+                                                    <img
+                                                        className="h-6 w-auto"
+                                                        src={Tablet}
+                                                        alt="PC"
+                                                    />
+                                                </button>
+                                                <button
+                                                    onClick={LivePhone}
+                                                    className="p-4 hidden lg:flex"
+                                                >
+                                                    <img
+                                                        className="h-6 w-auto"
+                                                        src={Phone}
+                                                        alt="PC"
+                                                    />
                                                 </button>
                                             </div>
                                             <iframe
-                                                className={
-                                                    !showLiveTablet
-                                                        ? "h-full w-full"
-                                                        : "h-full w-1/2"
-                                                }
+                                                title="web-1"
+                                                className={changeWidthLive}
                                                 src="https://nawija.github.io/web-1/"
                                             />
                                         </div>
                                     )}
                                 </div>
-                                <div class=" mt-4">
+                                <div class="flex items-center justify-between pr-1 w-full mt-4">
                                     <button
                                         onClick={HandleShowLive}
-                                        className="border border-white py-2 px-4 mx-auto bg-white/10 rounded-lg text-white hover:bg-black/20 hover:scale-95 z-50"
+                                        className="border border-white py-2 m-0 px-4 bg-white/10 rounded-lg text-white hover:bg-black/20 transition-transform duration-200 hover:scale-95 z-50"
                                     >
                                         Zobacz Live
                                     </button>
-                                </div>
-                            </div>
-
-                            <div class=" lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <div class="block h-48 rounded overflow-hidden">
-                                    <img
-                                        alt="ecommerce"
-                                        class="object-cover object-center w-full h-full block"
-                                        src="https://dummyimage.com/420x260"
-                                    />
-                                </div>
-                                <div class=" mt-4">
-                                    <button
-                                        onClick={HandleShowLive}
-                                        className="border border-white py-2 px-4 mx-auto bg-white/10 rounded-lg text-white hover:bg-black/20 hover:scale-95"
-                                    >
-                                        Zobacz Live
-                                    </button>
+                                    <p className="text-zinc-400">#web-1</p>
                                 </div>
                             </div>
                         </div>

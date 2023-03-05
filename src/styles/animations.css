@@ -157,15 +157,15 @@
 }
 /* --------- dubleCircle ----------- */
 .dubleCircle {
-    animation: dubleCircle 3s ease-in-out infinite alternate-reverse;
+    animation: dubleCircle 2.3s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes dubleCircle {
     0% {
-        transform: rotate(800deg);
+        transform: rotate(1200deg) scale(2);
     }
     100% {
-        transform: rotate(-600deg);
+        transform: rotate(-600deg) ;
     }
 }
 

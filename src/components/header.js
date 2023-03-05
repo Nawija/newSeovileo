@@ -131,29 +131,29 @@ const Header = () => {
                             onClick={HandleDropMenu}
                             className="group relative px-1 py-1 mx-3 my-4"
                         >
-                            <p className="hover:text-orange-400 transition-colors duration-200">Oferta&#9662;</p>
-                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white" : "hidden group-hover:hidden lg:group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white"}>
+                            <p className="hover:text-orange-400 transition-colors duration-200">Usługi&#9662;</p>
+                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-lg overflow-hidden group-hover:text-white" : "hidden group-hover:hidden lg:group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-lg overflow-hidden group-hover:text-white"}>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-200 w-max"
-                                    to="/oferta"
+                                    to="/usługi"
                                 >
                                     Strona Internetowa
                                 </Link>{" "}
                                 <Link
-                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/oferta"
+                                    className="mx-2 w-max my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
+                                    to="/usługi"
                                 >
-                                    Projekt Graficzny
+                                    Grafika Komputerowa
                                 </Link>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/oferta"
+                                    to="/usługi"
                                 >
                                     Projekt Logo
                                 </Link>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/oferta"
+                                    to="/usługi"
                                 >
                                     Audyt SEO
                                 </Link>
