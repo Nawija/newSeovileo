@@ -4,7 +4,7 @@ import YesGreen from "../../assets/YesGreen.svg";
 
 const WhyGatsby = () => (
     <section className="relative w-full flex flex-col max-w-screen-2xl items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 lg:pt-24">
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase font-semibold mb-2 text-center changeColor textStreach text-green-500 ">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase font-semibold mb-2 text-center changeColor text-green-500 ">
             Dlaczego warto zainwestować w stronę opartą na GatsbyJS?
         </h2>
         <h5 className="text-base md:text-lg text-center">

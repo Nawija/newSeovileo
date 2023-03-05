@@ -17,7 +17,7 @@ const SpeedTest = () => (
             <div className=" flex flex-col md:flex-row items-center lg:items-stretch justify-center sm:px-8 py-6 lg:py-12 text-white text-center w-full">
                 <Link
                     to="https://www.facebook.com/profile.php?id=100090402000669"
-                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-300 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                 >
                     <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
@@ -31,7 +31,7 @@ const SpeedTest = () => (
 
                 <Link
                     to="mailto:seovileo@gmail.com"
-                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-300 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                 >
                     <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
@@ -44,7 +44,7 @@ const SpeedTest = () => (
                 </Link>
                 <Link
                     to="/kontakt"
-                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-300 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                    className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                 >
                     <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
@@ -58,7 +58,7 @@ const SpeedTest = () => (
             </div>
             <Link
                 to="/kontakt"
-             className="uppercase border-[3px] border-white bg-gradient-to-tr from-amber-400 to-amber-100 text-amber-900 text-sm font-semibold py-3 px-6 drop-shadow-lg rounded-3xl tracking-wide shadow-lg shadow-white/30 m-4 lg:mx-12 lg:m-8">
+             className="uppercase border-[3px] border-white bg-gradient-to-tr from-amber-400 to-amber-100 text-amber-900 text-sm font-semibold py-3 px-6 drop-shadow-lg rounded-3xl tracking-wide shadow-lg shadow-white/30 m-4 lg:mx-12 hover:scale-95 transition-transform duration-200 lg:m-8">
                 Darmowa Wycena
             </Link>
         </div>

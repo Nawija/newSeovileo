@@ -25,7 +25,7 @@ const ScrollUpIcon = () => {
                     ? "fixed right-4 bottom-24 transition-transform duration-1000 z-50 translate-x-[200%]"
                     : "fixed right-4 hover:scale-110 bottom-24 translate-x-0 transition-transform duration-500 z-50 "
             }
-            to="/"
+            to="#"
         >
             <svg
                 className="h-11 w-11 md:h-12 md:w-12"

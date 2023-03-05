@@ -1,11 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import DubleCircle from "../dubleCircle";
+
 
 const Responsive = () => (
     <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto text-base md:text-lg">
         <div className="sm:px-8 py-2 md:py-12">
-            <DubleCircle />
             <div className="flex flex-col text-center w-full">
                 <h3 className="text-2xl lg:text-3xl font-medium title-font mb-2 changeColor">
                     Nie trzeba przepłacać za swoją stronę internetową!

@@ -135,25 +135,25 @@ const Header = () => {
                             <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white" : "hidden group-hover:hidden lg:group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-gradient-to-b from-black/90 to-zinc-900/90 shadow-lg rounded-lg overflow-hidden group-hover:text-white"}>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-200 w-max"
-                                    to="/"
+                                    to="/oferta"
                                 >
                                     Strona Internetowa
                                 </Link>{" "}
                                 <Link
                                     className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/"
+                                    to="/oferta"
                                 >
                                     Projekt Graficzny
                                 </Link>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/"
+                                    to="/oferta"
                                 >
                                     Projekt Logo
                                 </Link>
                                 <Link
                                     className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
-                                    to="/"
+                                    to="/oferta"
                                 >
                                     Audyt SEO
                                 </Link>
@@ -161,13 +161,13 @@ const Header = () => {
                         </button>
                         <Link
                             className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
-                            to="/"
+                            to="/poradnik"
                         >
                             Poradnik
                         </Link>
                         <Link
                             className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
-                            to="/"
+                            to="/portfolio"
                         >
                             Portfolio
                         </Link>
@@ -178,9 +178,9 @@ const Header = () => {
                             Kontakt
                         </Link>
                     </ul>
-                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-200 rounded-lg">
+                    <Link to="/kontakt" className="bg-slate-200/80 group hover:scale-95 transition duration-200 hover:bg-slate-300/80 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3  rounded-lg">
                         Darmowa Wycena
-                    </button>
+                    </Link>
                     <button
                         onClick={HandleMenu}
                         className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-200 rounded-lg"

@@ -116,21 +116,21 @@
 }
 /* ---------Text under hero technolgoia gatsby ----------- */
 .changeShadow {
-    animation: changeShadow 2s ease-in-out infinite alternate-reverse;
+    animation: changeShadow 5s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes changeShadow {
     0% {
-        box-shadow: 2px 22px 33px #22c55e;
+        box-shadow: 2px 22px 43px #22c55e;
     }
     33% {
-        box-shadow: 22px 2px 33px orange;
+        box-shadow: 22px 2px 43px orange;
     }
     66% {
-        box-shadow: 2px -22px 33px #22c55e;
+        box-shadow: 2px -22px 43px #22c55e;
     }
     100% {
-        box-shadow: -21px 12px 33px orange;
+        box-shadow: -21px 12px 43px orange;
     }
 }
 /* ---------Text under hero technolgoia gatsby ----------- */
@@ -157,24 +157,15 @@
 }
 /* --------- dubleCircle ----------- */
 .dubleCircle {
-    animation: dubleCircle 20s ease-in-out infinite alternate-reverse;
+    animation: dubleCircle 3s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes dubleCircle {
     0% {
-        transform: translate(200%,100%) rotate(600deg);
-    }
-    25% {
-        transform: translate(500%,200%) rotate(-600deg);
-    }
-    50% {
-        transform: translate(400%,30%) rotate(600deg)
-    }
-    75% {
-        transform: translate(1200%,80%) rotate(-600deg)
+        transform: rotate(800deg);
     }
     100% {
-        transform: translate(200%,10%) rotate(600deg);
+        transform: rotate(-600deg);
     }
 }
 

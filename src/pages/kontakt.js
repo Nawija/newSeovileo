@@ -2,164 +2,170 @@ import * as React from "react";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
-const Kontakt = () => (
-    <Layout>
-        <section>
-            <div class="bg-zinc-900 text-white py-24 lg:pt-36">
-                <div class="max-w-screen-2xl flex flex-col items-center justify-center lg:flex-row lg:items-start px-4 md:px-8 mx-auto">
-                    <div class="mb-10 md:mb-16">
-                        <h2 class="text-2xl lg:text-3xl changeColor font-semibold text-center mb-4 md:mb-6">
-                            Formularz Kontaktowy
-                        </h2>
+import ResponsMonitors from "../assets/responsMonitors.png"
 
-                        <p class="max-w-screen-md text-gray-300 md:text-lg text-center mx-auto">
-                            {" "}
-                            Skorzystaj z naszego formularza kontaktowego, aby
-                            wysłać do nas wiadomość. Prosimy o podanie swoich
-                            danych kontaktowych oraz treści wiadomości, a my
-                            postaramy się odpowiedzieć na nią jak najszybciej.
-                            Jesteśmy do Twojej dyspozycji i z przyjemnością
-                            odpowiemy na wszystkie Twoje pytania.
-                        </p>
-                    </div>
-                    <div className="bg-zinc-800 p-4 lg:mx-6 lg:p-6 rounded-xl changeShadow">
-                    <form
-                        action="https://formsubmit.io/send/seovileo@gmail.com"
-                        method="POST"
-                        class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto"
-                    >
-                        <div>
-                            <input
-                                name="_redirect"
-                                type="hidden"
-                                id="name"
-                                value="https://seovileo.pl/dziekujemy/"
-                            />
+const Kontakt = () => {
+    return (
+        <Layout>
+            <section>
+                <div class="text-black py-24 lg:pt-36">
+                    <div class="max-w-screen-2xl flex flex-col items-center justify-center lg:flex-row lg:items-start px-4 md:px-8 mx-auto">
+                        <div class="mb-10 md:mb-16 flex flex-col items-center justify-center">
+                            <h2 class="text-2xl lg:text-3xl changeColor font-semibold text-center mb-4 md:mb-6">
+                                Formularz Kontaktowy
+                            </h2>
 
-                            <label
-                                htmlFor="first-name"
-                                for="first-name"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Imię
-                            </label>
-                            <input
-                                name="first-name"
-                                placeholder="Imię"
-                                class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            />
-                        </div>
-
-                        <div>
-                            <label
-                                htmlFor="last-name"
-                                for="last-name"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Nazwisko
-                            </label>
-                            <input
-                                name="last-name"
-                                placeholder="Nazwisko"
-                                class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            />
-                        </div>
-
-                        <div class="sm:col-span-2">
-                            <label
-                                htmlFor="email"
-                                for="email"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Email
-                            </label>
-                            <input
-                                name="email"
-                                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
-                                placeholder="email@seovileo.pl"
-                                class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                htmlFor="phone"
-                                for="phone"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Tel
-                            </label>
-                            <input
-                                name="phone"
-                                type="tel"
-                                placeholder="+48 521 521 500"
-                                pattern="[0-9+]{9,12}"
-                                required
-                                class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            />
-                        </div>
-
-                        <div>
-                            <label
-                                htmlFor="choosePlan"
-                                for="choosePlan"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Wybierz Plan
-                            </label>
-                            <Link
-                                class="text-amber-600 inline-block rounded-full ml-2 text-xs underline"
-                                to="/oferta"
-                            >
-                                Cennik
-                            </Link>
-                            <select
-                                name="choosePlan"
-                                class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            >
-                                <option>Base</option>
-                                <option>Pro</option>
-                                <option>Special</option>
-                            </select>
-                        </div>
-
-                        <div class="sm:col-span-2">
-                            <label
-                                htmlFor="message"
-                                for="message"
-                                class="inline-block  text-sm sm:text-base mb-2"
-                            >
-                                Wiadomość
-                            </label>
-                            <textarea
-                                name="message"
-                                class="w-full h-64 bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
-                            ></textarea>
-                        </div>
-
-                        <div class="sm:col-span-2 flex justify-between items-center">
-                            <p class="text-gray-400 text-xs">
-                                Zapoznaj sie również z naszym{" "}
-                                <Link
-                                    to="/regulamin"
-                                    class="hover:text-amber-500 active:text-amber-600 underline transition duration-200 "
-                                >
-                                    Regulaminem
-                                </Link>
-                                .
+                            <p class="max-w-screen-md text-white w-4/5 md:text-lg text-center mx-auto">
+                                {" "}
+                                Skorzystaj z naszego formularza kontaktowego,
+                                aby wysłać do nas wiadomość. Prosimy o podanie
+                                swoich danych kontaktowych oraz treści
+                                wiadomości, a my postaramy się odpowiedzieć na
+                                nią jak najszybciej. Jesteśmy do Twojej
+                                dyspozycji i z przyjemnością odpowiemy na
+                                wszystkie Twoje pytania.
                             </p>
-                            <button class="inline-block bg-gray-800 hover:bg-gray-900 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-0 transition duration-200 px-8 py-3">
-                                Wyślij
-                            </button>
+                            <img src={ResponsMonitors} className="h-96 w-auto mt-24 hidden lg:flex" />
                         </div>
-                    </form>
+                        <div className="bg-zinc-800 p-4 lg:mx-6 lg:p-6 rounded-xl changeShadow">
+                            <form
+                                action="https://formsubmit.io/send/seovileo@gmail.com"
+                                method="POST"
+                                class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto"
+                            >
+                                <div>
+                                    <input
+                                        name="_redirect"
+                                        type="hidden"
+                                        id="name"
+                                        value="https://seovileo.pl/dziekujemy/"
+                                    />
+
+                                    <label
+                                        htmlFor="first-name"
+                                        for="first-name"
+                                        className="inline-block text-zinc-300  text-sm sm:text-base mb-2"
+                                    >
+                                        Imię
+                                    </label>
+                                    <input
+                                        name="first-name"
+                                        placeholder="Imię"
+                                        className="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        htmlFor="last-name"
+                                        for="last-name"
+                                        className="inline-block text-zinc-300 text-sm sm:text-base mb-2"
+                                    >
+                                        Nazwisko
+                                    </label>
+                                    <input
+                                        name="last-name"
+                                        placeholder="Nazwisko"
+                                        className="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    />
+                                </div>
+
+                                <div className="sm:col-span-2">
+                                    <label
+                                        htmlFor="email"
+                                        for="email"
+                                        className="inline-block text-zinc-300 text-sm sm:text-base mb-2"
+                                    >
+                                        Email
+                                    </label>
+                                    <input
+                                        name="email"
+                                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                                        placeholder="email@seovileo.pl"
+                                        class="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    />
+                                </div>
+                                <div>
+                                    <label
+                                        htmlFor="phone"
+                                        for="phone"
+                                        className="inline-block text-zinc-300 text-sm sm:text-base mb-2"
+                                    >
+                                        Tel
+                                    </label>
+                                    <input
+                                        name="phone"
+                                        type="tel"
+                                        placeholder="+48 521 521 500"
+                                        pattern="[0-9+]{9,12}"
+                                        required
+                                        className="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        htmlFor="choosePlan"
+                                        for="choosePlan"
+                                        className="inline-block text-zinc-300 text-sm sm:text-base mb-2"
+                                    >
+                                        Wybierz Plan
+                                    </label>
+                                    <Link
+                                        class="text-amber-500 inline-block rounded-full ml-2 text-xs underline"
+                                        to="/oferta"
+                                    >
+                                        Cennik
+                                    </Link>
+                                    <select
+                                        name="choosePlan"
+                                        className="w-full bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    >
+                                        <option>Base</option>
+                                        <option>Pro</option>
+                                        <option>Special</option>
+                                    </select>
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label
+                                        htmlFor="message"
+                                        for="message"
+                                        className="inline-block text-zinc-300 text-sm sm:text-base mb-2"
+                                    >
+                                        Wiadomość
+                                    </label>
+                                    <textarea
+                                        name="message"
+                                        class="w-full h-64 bg-gray-50  border focus:ring ring-amber-300 rounded outline-none transition duration-100 px-3 py-2"
+                                    ></textarea>
+                                </div>
+
+                                <div class="sm:col-span-2 flex justify-between items-center">
+                                    <p class="text-gray-400 text-xs">
+                                        Zapoznaj sie również z naszym{" "}
+                                        <Link
+                                            to="/regulamin"
+                                            class="hover:text-amber-500 active:text-amber-600 underline transition duration-200 "
+                                        >
+                                            Regulaminem
+                                        </Link>
+                                        .
+                                    </p>
+                                    <button class="inline-block border-2 border-white bg-gray-800 hover:bg-gray-600 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-0 transition duration-200 hover:scale-95 px-8 py-3">
+                                        Wyślij
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </Layout>
-);
+            </section>
+        </Layout>
+    );
+};
 
 export const Head = () => <Seo title="Kontakt" />;
 

@@ -21,6 +21,8 @@ body{
     height: 100%;
     backdrop-filter: blur(10px);
 }
+    
+    
 
 .lineAfter::before{
     margin-top: -10px;
