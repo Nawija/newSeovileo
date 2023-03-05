@@ -5,7 +5,7 @@ import efficiency from "../../assets/efficiency.svg";
 import seo from "../../assets/seo.svg";
 
 const Responsive = () => (
-    <section className="relative w-full flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 md:pt-24 text-center text-white">
+    <section className="relative top-0 w-full flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 md:pt-24 text-center text-white">
         <div className="sm:px-8 py-2 md:py-12">
 
             <h3 className=" w-max mx-auto uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">

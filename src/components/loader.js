@@ -9,7 +9,7 @@ const Loader = () => {
             className="text-white text-4xl font-medium"
                 sequence={[
 
-                    "Seovileo",
+                    "Witaj w Seovileo",
                     2000, //
                 ]}
                 wrapper="span"

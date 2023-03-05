@@ -6,19 +6,16 @@ import amail from "../../assets/contact/amail.svg";
 import mail from "../../assets/contact/mail.svg";
 
 const SpeedTest = () => {
-
     return (
         <section className="relative w-full flex flex-col  max-w-[2200px] items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-8 lg:pt-24">
-            <div className="fixedBgSpeedTest lg:bg-fixed bg-local">
-            </div>
+            <div className="fixedBgSpeedTest lg:bg-fixed bg-local"></div>
             <div className="flex flex-col items-center justify-center w-full flex-wrap mx-auto">
                 <div className=" flex flex-col md:flex-row items-center lg:items-stretch justify-center sm:px-8 py-6 lg:py-12 text-white text-center w-full">
                     <Link
                         to="https://www.facebook.com/profile.php?id=100090402000669"
-                        className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                        className="relative flex shadow-inner shadow-white/40 bg-black/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                     >
-                        <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
                         <img
                             className="mb-3 h-auto w-16 lg:w-24"
                             src={messenger}
@@ -29,10 +26,9 @@ const SpeedTest = () => {
 
                     <Link
                         to="mailto:seovileo@gmail.com"
-                        className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                        className="relative flex shadow-inner shadow-white/40 bg-black/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                     >
-                        <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
                         <img
                             className="mb-3 h-auto w-16 lg:w-24"
                             src={amail}
@@ -42,10 +38,9 @@ const SpeedTest = () => {
                     </Link>
                     <Link
                         to="/kontakt"
-                        className="relative flex shadow-inner shadow-white/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
+                        className="relative flex shadow-inner shadow-white/40 bg-black/40 hover:scale-95 transition-transform duration-200 flex-col items-center rounded-2xl justify-center overflow-hidden w-44 p-4 m-4 lg:mx-12
                  "
                     >
-                        <div className="absolute w-full rounded-2xl h-full bg-black/30 -z-[1]" />
                         <img
                             className="mb-3 h-auto w-16 lg:w-28"
                             src={mail}

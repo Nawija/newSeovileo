@@ -1,5 +1,4 @@
 import * as React from "react";
-import { TypeAnimation } from "react-type-animation";
 import heroVideo from "../assets/heroVideo.mp4";
 
 const HeroChild = () => (

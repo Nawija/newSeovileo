@@ -5,6 +5,7 @@ import Seo from "../components/seo";
 import { Link } from "gatsby";
 
 import HeroChild from "../components/heroChild"
+import { StaticImage } from "gatsby-plugin-image";
 
 const Poradnik = () => (
     <Layout>
@@ -61,9 +62,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Co to jest SEO?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Jest to proces polegający na dostosowywaniu strony
                         internetowej oraz jej treści tak, aby była ona lepiej
@@ -73,10 +74,11 @@ const Poradnik = () => (
                         widoczności w wynikach wyszukiwania.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-contain object-center rounded-md mx-auto"
                     alt="hero"
                     src="https://cdn.pixabay.com/photo/2014/08/06/00/06/search-engine-411105_960_720.jpg"
+                    placeholder="blurred"
                 />
             </div>
         </section>
@@ -87,9 +89,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="md:order-1 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Czym jest Hosting?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Usługa polegająca na przechowywaniu plików strony
                         internetowej na specjalnym serwerze, dzięki czemu strona
@@ -99,9 +101,10 @@ const Poradnik = () => (
                         użytkowników.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-contain object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://cdn.pixabay.com/photo/2014/08/06/00/06/search-engine-411105_960_720.jpg"
                 />
             </div>
@@ -113,9 +116,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Co to jest Domena?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         to unikalny adres internetowy, który pozwala na
                         odnalezienie strony internetowej przez użytkowników.
@@ -128,9 +131,10 @@ const Poradnik = () => (
                         domen.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-cover object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://cdn.pixabay.com/photo/2016/02/05/17/30/internet-1181587_960_720.png"
                 />
             </div>
@@ -142,9 +146,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="md:order-1 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Co to Strona One Page?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Strona One Page, czyli strona jednostronicowa, to rodzaj
                         strony internetowej, która zawiera wszystkie niezbędne
@@ -156,9 +160,10 @@ const Poradnik = () => (
                         lub w przypadku gdy zawartość strony jest ograniczona.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-cover object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://cdn.pixabay.com/photo/2014/08/06/00/06/search-engine-411105_960_720.jpg"
                 />
             </div>
@@ -170,9 +175,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Co to Strona Multi Page?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Strona multi page, czyli strona wielostronicowa, to
                         rodzaj strony internetowej, która składa się z kilku lub
@@ -185,9 +190,10 @@ const Poradnik = () => (
                         swoim użytkownikom.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-cover object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 />
             </div>
@@ -199,9 +205,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="md:order-1 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Co to jest Responsywna Strona?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Responsywność strony internetowej oznacza, że strona ta
                         jest dostosowana do różnych rozmiarów ekranów urządzeń,
@@ -215,9 +221,10 @@ const Poradnik = () => (
                         strony dla różnych urządzeń.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-cover object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 />
             </div>
@@ -229,9 +236,9 @@ const Poradnik = () => (
         >
             <div class="container mx-auto flex pt-8 pb-12 px-8 md:flex-row flex-col items-center justify-between">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
-                    <h1 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
+                    <h2 class="title-font lg:text-5xl sm:text-4xl text-3xl mb-4 text-zinc-200 font-coming font-black">
                         Czym jes Design?
-                    </h1>
+                    </h2>
                     <p class="mb-4 leading-relaxed">
                         Proces tworzenia i projektowania produktów, usług,
                         przestrzeni i komunikacji. Jest to interdyscyplinarny
@@ -243,9 +250,10 @@ const Poradnik = () => (
                         przemysł, produktów, interfejsów i usług.
                     </p>
                 </div>
-                <img
+                <StaticImage
                     class="w-full md:w-1/2 lg:w-1/3 h-64 md:h-72 lg:h-96 object-cover object-center rounded-md mx-auto"
                     alt="hero"
+                    placeholder="blurred"
                     src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
                 />
             </div>

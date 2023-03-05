@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const path = require(`path`);
 module.exports = {
     pathPrefix: "/newSeovileo",
     siteMetadata: {
@@ -10,14 +11,6 @@ module.exports = {
         siteUrl: `https://seovileo.pl/`,
     },
     plugins: [
-        {
-            resolve: "gatsby-plugin-react-svg",
-            options: {
-                rule: {
-                    include: /\.inline\.svg$/, // See below to configure properly
-                },
-            },
-        },
         {
             resolve: `gatsby-omni-font-loader`,
             options: {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import speedTest from "../../assets/speedTest.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 import ArrowsSVG from "../../components/svg/arrows";
 
@@ -25,7 +25,7 @@ const SpeedTest = () => (
         </div>
 
         <div className="relative w-full lg:w-[80%] px-2 md:px-12 sm:px-8 py-2 md:py-12">
-            <img className=" w-full h-full z-30" src={speedTest} alt="test wydajności i szybkości" />
+            <StaticImage placeholder="blurred" className=" w-full h-full z-0" src="../../assets/speedTest.png" alt="test wydajności i szybkości" />
             <ArrowsSVG />
 
         </div>

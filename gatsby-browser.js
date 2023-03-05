@@ -7,17 +7,18 @@ export const onClientEntry = () => {
     setTimeout(() => {
       if (document.getElementById("loader-wrapper")) {
         document.getElementById("loader-wrapper").style.display = "flex";
+        document.getElementById("loader-wrapper").style.opacity = "100";
       }
     }, 0);
   };
   
-  export const onInitialClientRender = () => {
-    setTimeout(() => {
-      if (document.getElementById("loader-wrapper")) {
-        document.getElementById("loader-wrapper").style.display = "flex";
-      }
-    }, 0);
-  };
+//   export const onInitialClientRender = () => {
+//     setTimeout(() => {
+//       if (document.getElementById("loader-wrapper")) {
+//         document.getElementById("loader-wrapper").style.display = "flex";
+//       }
+//     }, 0);
+//   };
   
   export const onRouteUpdate = () => {
     setTimeout(() => {
@@ -25,5 +26,5 @@ export const onClientEntry = () => {
         document.getElementById("loader-wrapper").style.opacity = "0";
         document.getElementById("loader-wrapper").style.zIndex = "-99";
       }
-    }, 1100);
+    }, 1500);
   };

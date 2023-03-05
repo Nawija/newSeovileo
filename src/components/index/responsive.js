@@ -1,6 +1,6 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
-import ResponsMonitors from "../../assets/responsMonitors.png";
 
 const Responsive = () => (
     <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto text-base md:text-lg pt-8 md:pt-24 text-white">
@@ -12,7 +12,7 @@ const Responsive = () => (
                 na każdym użądzeniu
             </h4>
         </div>
-        <img className="w-full h-full" src={ResponsMonitors} alt="Strona na tablecie, telefonie i komputerze"/>
+        <StaticImage placeholder="blurred" className="w-full h-full" src="../../assets/responsMonitors.png" alt="Strona na tablecie, telefonie i komputerze"/>
     </section>
 );
 

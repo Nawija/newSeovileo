@@ -1,10 +1,11 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
 
-import ResponsMonitors from "../assets/responsMonitors.png"
+
 
 const Kontakt = () => {
     return (
@@ -27,7 +28,9 @@ const Kontakt = () => {
                                 dyspozycji i z przyjemnością odpowiemy na
                                 wszystkie Twoje pytania.
                             </p>
-                            <img src={ResponsMonitors} className="h-96 w-auto mt-24 hidden lg:flex" />
+                            <div className="h-96 w-auto mt-24 hidden lg:flex">
+                            <StaticImage layout="constrained" src="../assets/responsMonitors.png" alt="Wyglad na 3 różnych monitorach" className="h-full w-full" />
+                            </div>
                         </div>
                         <div className="bg-zinc-800 p-4 lg:mx-6 lg:p-6 rounded-xl changeShadow">
                             <form

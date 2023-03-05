@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { TypeAnimation } from "react-type-animation";
-import heroVideo from "../../assets/heroVideo.mp4";
+import heroVideo from "../../assets/heroVideo.webm";
 
 const Hero = () => (
 
@@ -9,7 +9,7 @@ const Hero = () => (
         <video
             className="lg:fixed absolute top-0 max-w-[2200px] mx-auto h-full w-full shadow-2xl object-cover object-center -z-50"
             src={heroVideo}
-            type="video/mp4"
+            type="video/webm"
             autoPlay
             loop
             muted
