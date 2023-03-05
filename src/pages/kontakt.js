@@ -18,7 +18,7 @@ const Kontakt = () => {
                                 Formularz Kontaktowy
                             </h2>
 
-                            <p class="max-w-screen-md text-white w-4/5 md:text-lg text-center mx-auto">
+                            <p class="max-w-screen-md w text-white w-4/5 md:text-lg text-center mx-auto">
                                 {" "}
                                 Skorzystaj z naszego formularza kontaktowego,
                                 aby wysłać do nas wiadomość. Prosimy o podanie
@@ -28,8 +28,8 @@ const Kontakt = () => {
                                 dyspozycji i z przyjemnością odpowiemy na
                                 wszystkie Twoje pytania.
                             </p>
-                            <div className="h-96 w-auto mt-24 hidden lg:flex">
-                            <StaticImage layout="constrained" src="../assets/responsMonitors.png" alt="Wyglad na 3 różnych monitorach" className="h-full w-full" />
+                            <div className="h-auto w-[30rem] mt-24 hidden lg:flex">
+                            <StaticImage layout="fullWidth" src="../assets/responsMonitors.png" alt="Wyglad na 3 różnych monitorach" className="h-full w-full" />
                             </div>
                         </div>
                         <div className="bg-zinc-800 p-4 lg:mx-6 lg:p-6 rounded-xl changeShadow">
