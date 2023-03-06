@@ -44,9 +44,11 @@ const Header = () => {
                 <nav
                     className={
                         showMenu
+
                             ? "max-w-screen-2xl mx-auto px-4 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
 
                             : "max-w-screen-2xl mx-auto px-4 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-200"
+
 
                     }
                 >
@@ -180,7 +182,9 @@ const Header = () => {
                             Kontakt
                         </Link>
                     </ul>
+
                     <Link to="/kontakt" className="bg-slate-200/80 group hover:scale-95 transition duration-200 hover:bg-slate-300/80 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap px-3 py-2  rounded-lg">
+
                         Darmowa Wycena
                     </Link>
                     <button

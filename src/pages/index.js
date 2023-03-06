@@ -25,7 +25,9 @@ const IndexPage = () => {
 
             <div className="relative bg-white overflow-hidden w-full z-10">
 
+
                 <div className="absolute left-1/2 -translate-x-1/2 max-w-[2200px] h-[60rem] lg:h-auto w-[310vw] md:w-[360vw] lg:w-[110vw] max-h-[63rem] min-h-[90rem] sm:min-h-[60rem] md:min-h-[90rem] lg:min-h-[60rem]">
+
                     <StaticImage
                         placeholder="blurred"
                         layout="constrained"

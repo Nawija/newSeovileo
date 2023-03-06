@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 
 
+
 import messenger from "../../assets/contact/messenger.svg";
 import amail from "../../assets/contact/amail.svg";
 import mail from "../../assets/contact/mail.svg";
@@ -11,10 +12,12 @@ import mail from "../../assets/contact/mail.svg";
 
 const SpeedTest = () => {
     return (
+
         <section className="relative w-full flex flex-col  max-w-[2200px] items-center justify-center mx-auto pt-8 lg:pt-24">
             <div className="absolute w-full h-full">
             <StaticImage className="h-full w-full" src="../../assets/background/bgContact.png" />
             </div>
+
             <div className="flex flex-col items-center justify-center w-full flex-wrap mx-auto">
                 <div className=" flex flex-col md:flex-row items-center lg:items-stretch justify-center sm:px-8 py-6 lg:py-12 text-white text-center w-full">
                     <Link

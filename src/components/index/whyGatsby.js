@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import YesGreen from "../../assets/YesGreen.svg";
 
 const WhyGatsby = () => (
+
     <section className="relative w-full flex flex-col items-center justify-center mx-auto py-8 lg:py-24">
         <div className="flex items-center justify-center w-full">
             <div className="absolute -z-10 w-full max-w-screen-[2200px]">
@@ -26,6 +27,7 @@ const WhyGatsby = () => (
         </div>
         <div className="relative max-w-screen-2xl w-full flex flex-col lg:flex-row items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8 pt-6 lg:pt-12">
             <div className="relative w-full lg:w-[80%] px-2 md:px-12 sm:px-8 py-2 md:py-12">
+
                 <StaticImage
                     placeholder="blurred"
                     className=" w-full h-full z-30"
@@ -85,6 +87,7 @@ const WhyGatsby = () => (
                     <p className="text-base md:text-lg font-semibold">
                         Technologia klasy Premium
                     </p>
+
                 </div>
             </div>
         </div>
