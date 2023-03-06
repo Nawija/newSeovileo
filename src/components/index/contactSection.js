@@ -1,9 +1,12 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
+
+
 import messenger from "../../assets/contact/messenger.svg";
 import amail from "../../assets/contact/amail.svg";
 import mail from "../../assets/contact/mail.svg";
+
 
 const SpeedTest = () => {
     return (
@@ -59,5 +62,6 @@ const SpeedTest = () => {
         </section>
     );
 };
+
 
 export default SpeedTest;

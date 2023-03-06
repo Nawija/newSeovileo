@@ -33,7 +33,9 @@ const Hero = () => (
             />
         </div>
 
+
         <div className="flex items-center xl:ml-44 z-30 absolute bottom-[20%]">
+
 
             <Link
                 data-sal="flip-up"
