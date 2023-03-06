@@ -2,29 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: Signika,sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Signika, sans-serif;
+    background-color: rgb(24, 24, 27);
 }
 
-.text-main{
+/* Costomize scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3b3b3b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(154, 131, 105);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(162, 148, 135);
+}
+/* ----------------------- */
+
+.text-main {
     color: white;
 }
 
-.cards{
+.cards {
     position: absolute;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(10px);
 }
 
-.lineAfter::before{
+.lineAfter::before {
     margin-top: -10px;
-    content: ' ';
+    content: " ";
     background-color: orange;
     height: 2px;
     width: 0%;
     margin: 0 auto;
     margin-bottom: 10px;
     display: block;
-    
+}
+
+.fixedBgSpeedTest {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/background/bgContact.png);
+
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
 }

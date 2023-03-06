@@ -60,6 +60,7 @@
     animation: borderUnderCardDigit 2s ease-in-out infinite alternate-reverse;
 }
 
+
 @keyframes borderUnderCardDigit {
     0% {
         letter-spacing: 0.2rem;
@@ -78,6 +79,30 @@
         border-color: orange;
     }
 }
+/* ------------upperline txt----------- */
+
+.lineAfter::before{
+  animation: lineAfter 7s ease-in-out infinite ;
+}
+
+@keyframes lineAfter {
+  0% {
+    width: 0%;
+
+  }
+  22% {
+    width: 40%;
+  }
+
+  66% {
+    width: 40%;
+  }
+  77%{
+    opacity: 0%;
+  }
+
+
+}
 
 /* ---------Text under hero technolgoia gatsby ----------- */
 .changeColor {
@@ -93,6 +118,27 @@
     }
 }
 /* ---------Text under hero technolgoia gatsby ----------- */
+.changeShadow {
+    animation: changeShadow 5s ease-in-out infinite alternate-reverse;
+
+}
+
+@keyframes changeShadow {
+    0% {
+        box-shadow: 2px 22px 43px #22c55e;
+    }
+    33% {
+        box-shadow: 22px 2px 43px orange;
+    }
+    66% {
+        box-shadow: 2px -22px 43px #22c55e;
+    }
+    100% {
+        box-shadow: -21px 12px 43px orange;
+    }
+}
+/* ---------Text under hero technolgoia gatsby ----------- */
+
 .textStreach {
     animation: textStreach 5s ease-in-out infinite alternate-reverse;
 }
@@ -112,6 +158,20 @@
     }
     100% {
         letter-spacing: 0.1rem;
+    }
+}
+/* --------- dubleCircle ----------- */
+.dubleCircle {
+    animation: dubleCircle 2.3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes dubleCircle {
+    0% {
+        transform: rotate(200deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(-200deg) ;
+
     }
 }
 

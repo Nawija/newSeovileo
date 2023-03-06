@@ -8,11 +8,15 @@ const Header = () => {
         setMenu(!showMenu);
     };
 
+    const [dropMenu, setDrop] = useState(false);
+    const HandleDropMenu = () => {
+        setDrop(!dropMenu);
+    };
+
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
-        console.log(window.scrollY);
-        if (window.scrollY >= 120) {
+        if (window.scrollY >= 300) {
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -27,7 +31,7 @@ const Header = () => {
     return (
         <header
             className="
-                    z-50 bg-black mx-auto sticky top-0 text-base md:text-lg text-center
+                    z-50 bg-black mx-auto sticky top-0 text-center
             "
         >
             <div
@@ -40,8 +44,10 @@ const Header = () => {
                 <nav
                     className={
                         showMenu
-                            ? "max-w-screen-2xl mx-auto px-4 py-2 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
-                            : "max-w-screen-2xl mx-auto px-4 py-2 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-300"
+                            ? "max-w-screen-2xl mx-auto px-4 md:py-4 flex items-center justify-between w-full text-black bg-black/90 transition-colors duration-200"
+
+                            : "max-w-screen-2xl mx-auto px-4 md:py-2 flex items-center justify-between w-full text-black transition-colors duration-200"
+
                     }
                 >
                     <Link
@@ -50,7 +56,7 @@ const Header = () => {
                         aria-label="logo"
                     >
                         <svg
-                            className="w-11 h-auto"
+                            className="w-10 h-auto"
                             width="207"
                             height="208"
                             viewBox="0 0 207 208"
@@ -113,67 +119,93 @@ const Header = () => {
                     <ul
                         className={
                             showMenu
-                                ? "absolute text-lg top-full left-0 pb-4 flex flex-col text-main text-center w-full bg-black/90 opacity-100 transition duration-300 -translate-x-0 -z-10"
+                                ? "absolute text-lg top-full left-0 pb-4 flex flex-col text-main text-center w-full bg-black/90 opacity-100 transition duration-200 -translate-x-0 -z-10"
                                 : "absolute top-full left-0 py-2 flex flex-col lg:opacity-100 lg:static lg:flex-row lg:top-0 lg:translate-x-0 lg:py-0 text-main text-center w-full opacity-0 -translate-x-full transition duration-100 -z-10 lg:z-10 lg:ml-8"
                         }
                     >
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
                             to="/"
                         >
                             Home
                         </Link>
-                        <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
-                            to="/"
+                        <button
+                            onClick={HandleDropMenu}
+                            className="group relative px-1 py-1 mx-3 my-4"
                         >
-                            Oferta
-                        </Link>
+                            <p className="hover:text-orange-400 transition-colors duration-200">Usługi&#9662;</p>
+                            <div className={dropMenu ? "flex lg:hidden group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-lg overflow-hidden group-hover:text-white" : "hidden group-hover:hidden lg:group-hover:flex flex-col items-center justify-start  relative lg:absolute lg:top-full lg:pt-4 left-1/2 -translate-x-1/2 group-hover:h-auto px-6 bg-zinc-900 shadow-lg rounded-lg overflow-hidden group-hover:text-white"}>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3  hover:text-orange-400 drop-shadow-sm transition-colors duration-200 w-max"
+                                    to="/usługi"
+                                >
+                                    Strona Internetowa
+                                </Link>{" "}
+                                <Link
+                                    className="mx-2 w-max my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
+                                    to="/usługi"
+                                >
+                                    Grafika Komputerowa
+                                </Link>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
+                                    to="/usługi"
+                                >
+                                    Projekt Logo
+                                </Link>
+                                <Link
+                                    className="mx-2 my-2 px-2 py-3 hover:text-orange-400 drop-shadow-sm transition-colors duration-200"
+                                    to="/usługi"
+                                >
+                                    Audyt SEO
+                                </Link>
+                            </div>
+                        </button>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
-                            to="/"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
+                            to="/poradnik"
                         >
                             Poradnik
                         </Link>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
-                            to="/"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
+                            to="/portfolio"
                         >
                             Portfolio
                         </Link>
                         <Link
-                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-300"
-                            to="/"
+                            className="mx-2 my-2 px-2 py-3 hover:text-orange-400 transition-colors duration-200"
+                            to="/kontakt"
                         >
                             Kontakt
                         </Link>
                     </ul>
-                    <button className="bg-slate-200/80 group hover:bg-slate-100/90 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap p-3 transition-colors duration-300 rounded-lg">
+                    <Link to="/kontakt" className="bg-slate-200/80 group hover:scale-95 transition duration-200 hover:bg-slate-300/80 hidden lg:flex border-2 border-zinc-200 w-max whitespace-nowrap px-3 py-2  rounded-lg">
                         Darmowa Wycena
-                    </button>
+                    </Link>
                     <button
                         onClick={HandleMenu}
-                        className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-300 rounded-lg"
+                        className="bg-slate-200/80 group hover:bg-slate-100/90 lg:hidden p-2.5 transition-colors duration-200 rounded-lg"
                     >
                         <div
                             className={
                                 !showMenu
-                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 translate-y-2 rotate-45 rounded-lg"
+                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 translate-y-2 rotate-45 rounded-lg"
                             }
                         />
                         <div
                             className={
                                 !showMenu
-                                    ? "w-3 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-3 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 opacity-0"
+                                    ? "w-3 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-3 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 opacity-0"
                             }
                         />
                         <div
                             className={
                                 !showMenu
-                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 rounded-lg"
-                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-300 bg-gray-600 m-1 -translate-y-2 -rotate-45 rounded-lg"
+                                    ? "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 rounded-lg"
+                                    : "w-5 h-1 group-hover:bg-gray-700 transition-all duration-200 bg-gray-600 m-1 -translate-y-2 -rotate-45 rounded-lg"
                             }
                         />
                     </button>

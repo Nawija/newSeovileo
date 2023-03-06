@@ -1,9 +1,11 @@
 import * as React from "react";
-import ResponsMonitors from "../../assets/responsMonitors.png";
+import { StaticImage } from "gatsby-plugin-image";
+
 
 const Responsive = () => (
-    <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto text-base md:text-lg pt-8 md:pt-24 text-white">
-        <div className="sm:px-8 py-2 md:py-24 absolute top-[15%] md:top-[7%]">
+    <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto pt-8 md:pt-24 text-white">
+        <div className="sm:px-8 py-2 md:py-24 absolute top-[15%] md:top-[7%] z-20">
+
             <h3 className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold drop-shadow-xl">
                 responsywność
             </h3>
@@ -11,7 +13,9 @@ const Responsive = () => (
                 na każdym użądzeniu
             </h4>
         </div>
-        <img className="w-full h-full" src={ResponsMonitors} alt="Strona na tablecie, telefonie i komputerze"/>
+
+        <StaticImage placeholder="blurred" className="w-full h-full" src="../../assets/responsMonitors.png" alt="Strona na tablecie, telefonie i komputerze"/>
+
     </section>
 );
 
