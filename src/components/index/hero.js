@@ -1,16 +1,15 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { TypeAnimation } from "react-type-animation";
-import heroVideo from "../../assets/heroVideo.mp4";
+import heroVideo from "../../assets/heroVideo.webm";
 
 const Hero = () => (
 
     <section className="relative w-full h-screen max-h-[90rem] flex flex-col items-center justify-center text-base mx-auto max-w-[2200px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-2 md:py-24 z-0">
         <video
             className="lg:fixed absolute top-0 max-w-[2200px] mx-auto h-full w-full shadow-2xl object-cover object-center -z-50"
-
             src={heroVideo}
-            type="video/mp4"
+            type="video/webm"
             autoPlay
             loop
             muted
@@ -22,7 +21,6 @@ const Hero = () => (
             
         <div className="text-main text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold overflow-hidden w-full md:w-3/4 items-center justify-center px-2 mb-9 xl:text-start xl:ml-44 xl:w-1/2 flex">
             <TypeAnimation
-            className={'h-[33vh]'}
                 sequence={[
                     "Stwórz swoją wizytówkę w internecie z nami!",
                     2000, // Waits 1s
@@ -35,7 +33,9 @@ const Hero = () => (
             />
         </div>
 
-        <div className="flex items-center xl:ml-44 z-30">
+
+        <div className="flex items-center xl:ml-44 z-30 absolute bottom-[20%]">
+
 
             <Link
                 data-sal="flip-up"

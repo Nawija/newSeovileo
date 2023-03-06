@@ -1,38 +1,37 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import Footer from "./footer"
-import Messenger from "./messenger"
+import Header from "./header";
+import ScrollUpIcon from "./scrollUpIcon";
+import Footer from "./footer";
+import Messenger from "./messenger";
+import Loader from "./loader";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+    const data = useStaticQuery(graphql`
+        query SiteTitleQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
-    }
-  `)
+    `);
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      
-      <div>
+    return (
+        <>
+            <Loader />
+            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <ScrollUpIcon />
+            <div>
+                <Messenger />
 
-        <Messenger />
+                <main>{children}</main>
 
-        <main>{children}</main>
+                <Footer />
+            </div>
+        </>
+    );
+};
 
-
-        <Footer />
-
-
-      </div>
-    </>
-  )
-}
-
-export default Layout
+export default Layout;
