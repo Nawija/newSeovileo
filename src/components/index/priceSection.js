@@ -3,7 +3,9 @@ import { Link } from "gatsby";
 
 
 const Responsive = () => (
-    <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto text-base md:text-lg px-3 sm:px-8">
+
+    <section className="relative w-full max-w-[2200px] flex flex-col items-center justify-center mx-auto">
+
         <div className="sm:px-8 py-2 md:py-12">
             <div className="flex flex-col text-center w-full">
                 <h3 className="text-2xl lg:text-3xl font-medium title-font mb-2 changeColor">

@@ -19,7 +19,9 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <>
+
+        <div className="text-base text-black xl:px-0 px-3 sm:px-8">
+
             <Loader />
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
             <ScrollUpIcon />
@@ -30,7 +32,9 @@ const Layout = ({ children }) => {
 
                 <Footer />
             </div>
-        </>
+
+        </div>
+
     );
 };
 
