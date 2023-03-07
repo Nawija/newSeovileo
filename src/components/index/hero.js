@@ -5,7 +5,9 @@ import heroVideo from "../../assets/heroVideo.webm";
 
 const Hero = () => (
 
-    <section className="relative w-full h-screen max-h-[90rem] flex flex-col items-center justify-center text-base mx-auto max-w-[2200px] md:text-lg xl:items-start xl:px-0 px-3 sm:px-8 py-2 md:py-24 z-0">
+
+    <section className="relative w-full h-screen max-h-[90rem] flex flex-col items-center justify-center mx-auto max-w-[2200px] xl:items-start xl:px-0 py-2 md:py-24 z-0">
+
         <video
             className="lg:fixed absolute top-0 max-w-[2200px] mx-auto h-full w-full shadow-2xl object-cover object-center -z-50"
             src={heroVideo}
@@ -33,7 +35,9 @@ const Hero = () => (
             />
         </div>
 
+
         <div className="flex items-center xl:ml-44 z-30 absolute bottom-[20%]">
+
 
             <Link
                 data-sal="flip-up"

@@ -28,8 +28,8 @@ const Kontakt = () => {
                                 dyspozycji i z przyjemnością odpowiemy na
                                 wszystkie Twoje pytania.
                             </p>
-                            <div className="h-auto w-[30rem] mt-24 hidden lg:flex">
-                            <StaticImage layout="fullWidth" src="../assets/responsMonitors.png" alt="Wyglad na 3 różnych monitorach" className="h-full w-full" />
+                            <div className="h-auto w-[20rem] mt-24 hidden lg:flex">
+                            <StaticImage layout="fullWidth" src="../assets/responsAI.png" alt="Wyglad na 3 różnych monitorach" className="h-full w-full" />
                             </div>
                         </div>
                         <div className="bg-zinc-800 p-4 lg:mx-6 lg:p-6 rounded-xl changeShadow">

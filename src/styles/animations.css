@@ -88,16 +88,19 @@
 @keyframes lineAfter {
   0% {
     width: 0%;
+
   }
   22% {
     width: 40%;
   }
+
   66% {
     width: 40%;
   }
   77%{
     opacity: 0%;
   }
+
 
 }
 
@@ -117,6 +120,7 @@
 /* ---------Text under hero technolgoia gatsby ----------- */
 .changeShadow {
     animation: changeShadow 5s ease-in-out infinite alternate-reverse;
+
 }
 
 @keyframes changeShadow {
@@ -134,6 +138,7 @@
     }
 }
 /* ---------Text under hero technolgoia gatsby ----------- */
+
 .textStreach {
     animation: textStreach 5s ease-in-out infinite alternate-reverse;
 }
@@ -162,10 +167,13 @@
 
 @keyframes dubleCircle {
     0% {
-        transform: rotate(1200deg) scale(2);
+
+        transform: rotate(200deg) scale(1.2);
     }
     100% {
-        transform: rotate(-600deg) ;
+        transform: rotate(-200deg) ;
+
+
     }
 }
 
